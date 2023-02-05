@@ -44,28 +44,7 @@
 <br>
 <br><br><a href="/">Book Us </a>
 </div>
-
-<div class="tours">
-
-<div class="places">
-<h2>Ohio</h2>
-<img src="/" style="width:300px;height:250px;border-radius:12px;">
-<br><br>
-</div>
-
-<div class="places">
-<h2>Iowa</h2>
-<img src="IMG_0543 (1).jpg" style="width:300px;height:250px;border-radius:12px;">
-<br><br>
-</div>
-
-<div class="places">
-<h2>Florida</h2>
-<img src="221231_071853_20.jpeg" style="width:300px;height:250px;border-radius:12px;">
-<br><br>
-</div>
-</div>
-</div>
+    </div>
 <div class="row3">
 <section class="blurb" style="background-color:lightgray;">
     <br><br>
@@ -397,6 +376,39 @@ if(isset($_POST['submit'])){
     color:black;
     }
     
+.body2{
+width:100%;
+height:100%;
+overflow:hidden;
+position:relative;
+background-image:url(img1.jpeg);
+background-position:center;
+background-repeat:no-repeat;
+background-size:cover;
+animation:change 10s infinite ease-in-out;
+}
+
+@keyframes change{
+0%{
+background-image:url(img1.jpeg);
+}
+20%{
+background-image:url(img2.jpeg);
+}
+40%{
+background-image:url(img3.jpeg);
+}
+60%{
+background-image:url(/);
+}
+80%{
+background-image:url(/);
+}
+100%{
+background-image:url(/);
+}
+}
+    
     /*navbar*/
     
     
@@ -477,18 +489,7 @@ if(isset($_POST['submit'])){
     }
     /*body*/
     
-    .body2{
-    width:100%;
-    height:auto;
-    display:flex;
-    flex-direction:column;
-    justify-content:space-around;
-    align-items:center;
-    background-image:linear-gradient(rgba(0,0,0,0.50),rgba(0,0,0,0.50)),url(qnsstreet.jpg);
-    background-position:center;
-    background-size:cover;
-    }
-    
+
     /*heading*/
     
     .heading{
@@ -531,20 +532,7 @@ if(isset($_POST['submit'])){
     
     @media screen and (max-width:1000px){
     
-    
-    
-    .body2{
-    height:auto;
-    display:flex;
-    flex-direction:column;
-    justify-content:space-around;
-    align-items:center;
-    background-image:linear-gradient(rgba(0,0,0,0.50),rgba(0,0,0,0.50)),url(qnsstreet.jpg);
-    background-position:center;
-    background-size:cover;
-    width:100%;
-    }
-    
+
     .heading{
     align-items:center;
     }
