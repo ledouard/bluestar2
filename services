@@ -21,7 +21,7 @@
 <input type="checkbox" id="check">
 <label for="check" class="checkbtn">
 <i class="fas fa-bars"></i></label>
-<label class="logo">LOGO</label>
+<label class="logo"><img src="IMG_1702.jpg" style="width:100px;height:80px;"></label>
 <ul>
 <li><a href="/">Home</a></li>
 <li><a href="/">Services</a></li>
@@ -53,37 +53,30 @@
 <br><br><br>
 <div class="boxes">
 <div class="box-advice">
-<h2>Long Distance Moving</h2>
-<p>Moving is a difficult time for everyone.  Fortunately, here at Bluestar Movers LLC we have a variety of services to keep your moving experience good:</p>
+<h2 style="font-size:50px;">Long Distance Moving</h2>
 <ul class="tips">
-    <li><p>We provide an unpacking service as well as a packing service.  Clients with assistance needs or disabilities will be accomodated.</p></li>
+    <img src="221231_071854_45.png" style="width:600px;height:600px;float:right;"><li><p>We provide an unpacking service as well as a packing service.  Clients with assistance needs or disabilities will be accomodated.</p></li>
     <li><p>Dumping servies for all your junk needs.  We lug your junk out.</p></li>
-    <li><p>Start budgeting 6 months in advance.</p></li>
+    <li><p>State-to-state moving services.  With our previously mentioned unpacking and dumping services, moving to another state has never been easier.</p></li>
     <li><p>Cancel or transfer your utilities to your new residence.</p></li>
 </ul>
 </div>
 <div class="box-pic">
-<img src="/">
+
 </div>
 
 </div>
 
 <style>
 .boxes{
-display:flex;
-flex-direction:row;
 padding:100px;
 }
 
 .boxes2{
-display:flex;
-flex-direction:row;
 padding:100px;
 }
 
 .boxes3{
-display:flex;
-flex-direction:row;
 padding:100px;
 }
 </style>
@@ -91,25 +84,25 @@ padding:100px;
 <div class=boxservices>
 <div class="boxes2">
     <div class="box-pic2">
-        <img src="/">
+
     </div>
-    <ul class="tips2">
+    <div class="tips">
     <h2>Our Storage Services</h2>
-        <p>We have been providing storage services since our inception.  We strive to provide a clean, dry, safe place for our clients to store whatever they need.  Free up to a month with our Long Distance Moves!  <a href="/">Contact Us</a></p>
-    </ul>
+        <p>        <img src="View rece(1).jpg" style="width:600px;height:600px;float:left;">We have been providing storage services since our inception.  We strive to provide a clean, dry, safe place for our clients to store whatever they need.  Humidity control, 24 hour surveillance, your needs are met at Bluestar Movers. <a href="/">Contact Us</a></p>
+    </div>
 </div>
-
-
+</div>
+<br><br><br><br><br><br><br><br><br>
 <div class="boxes3">
-    <ul class="tips2">
-    <h2>Services with a Smile</h2>
-        <p>Whether you need loading, unloading, a move to a different state or just a different block, our services will get you to where you need to go.<a href="/"> Contact Us</a></p>
+    <ul class="tips">
+    <h2>Vehicle Transport</h2>
+<p>                <img src="IMG_1286.jpg" style="width:600px;height:400px;float:right;">We here at Bluestar Movers have the capability to transport your personal vehicle from one location to the next.  Speak to a representative about details or contact us.<a href="/"> Contact Us</a></p>
     </ul>
         <div class="box-pic3">
-        <img src="/">
+
     </div>
 </div>
-
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br>
 <footer>
 <div class="footer-content">
 <h3>Blue Star Movers</h3>
@@ -222,7 +215,7 @@ padding:100px;
     margin-top:80px;
     }
     
-    @media(max-width:952px){
+    @media(max-width:1000px){
     label.logo{
     font-size:30px;
     padding-left:50px;
@@ -230,7 +223,7 @@ padding:100px;
     
     }
     
-    @media(max-width:858px){
+    @media(max-width:1000px){
     .checkbtn{
     display:block;
     }
@@ -260,8 +253,16 @@ padding:100px;
     #check:checked ~ ul{
     left:0;
     }
+    
+    img{
+    width:200px;
+    height:200px;
     }
     
+    p{
+    font-size:30px;
+    }
+    }
       .body2{
     width:100%;
     height:auto;
@@ -272,6 +273,7 @@ padding:100px;
     background-image:linear-gradient(rgba(0,0,0,0.50),rgba(0,0,0,0.50)),url(qnsstreet.jpg);
     background-position:center;
     background-size:cover;
+    padding:100px;
     }
     
         .heading{
@@ -373,7 +375,10 @@ p{
     } 
     
     .advise p{
-    font-size:30px;
+    font-size:50px;
     }
     
+    .tips{
+        font-size:30px;
+    } 
     </style>
