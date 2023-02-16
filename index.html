@@ -43,16 +43,20 @@
 <h1>BlueStar Moving, LLC</h1>
 </div>
     </div>
-
-<section class="form2">
+<div class="form-title">
 <h1>Contact Us Now</h1>
 <f>Fill out our form at your leisure for a FREE quote</f>
+</div>
+<section class="form2">
+
+<div class="course-pic">
+<img src="imgblurbgirl.jpg" style="width:400px;height:600px;">
+</div>
 
 
-
-<div class="course-col2">
+<div class="course-col2" style="width:660px;">
 <h3>Get  A Quote Free</h3>
-<p>Or Contact us on <i class="fa-brands fa-facebook"></i>Facebook or <i class="fa-brands fa-twitter"></i>Twitter</p>
+<p>IN MINUTES</p>
 
     <?php 
 if(isset($_POST['submit'])){
@@ -707,12 +711,20 @@ background-image:url(imagejpeg_0(2).jpg);
     }
     }
     
+    .form-title{
+        text-align:center;
+    font-family: 'Roboto Condensed', sans-serif;
+    }
+    
     .form2{
     text-align:center;
     font-family: 'Roboto Condensed', sans-serif;
     width:auto;
-    opacity:0.5;
+   
     padding:90px;
+    display:flex;
+    flex-direction:row;
+    justify-content:space-between;
     }
     
     .input-group{
@@ -750,10 +762,16 @@ background-image:url(imagejpeg_0(2).jpg);
     text-align:center;
     }
     
+    @media(max-width:1000px){
+    .form2{
+    display:flex;
+    flex-direction:column;
+    }
+    }
     
-    
-    
-    
+
+
+}
 
     /*slideshow*/
 
