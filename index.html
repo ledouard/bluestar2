@@ -50,7 +50,7 @@
 <section class="form2">
 
 <div class="course-pic">
-<img src="imgblurbgirl.jpg" style="width:600px;height:600px;">
+<img src="imgblurbgirl.jpg" style="width:700px;height:600px;">
 </div>
 
 
@@ -155,10 +155,10 @@ if(isset($_POST['submit'])){
 </section>
 
 
-<div class="certs">
+<div class="certs" style="align-items:center;">
 <div class="cert-blurb">
-<h1>Certified, Insured, and Trusted</h1>
-</div>
+<h1 style="font-family: 'Roboto Condensed', sans-serif;">Certified, Insured, and Trusted.  For the most impactful and least stressful experience.</h1>
+</div><br>
 <div class="cert-pic">
 <img src="licbonins.jpeg" style="width:300px;height:250px;border-radius:12px;"><img src="angielistlogo.png" style="width:300px;height:250px;border-radius:12px;"><img src="/" style="width:300px;height:250px;border-radius:12px;">
 </div>
@@ -554,10 +554,11 @@ background-image:url(imagejpeg_0(2).jpg);
     
     .certs{
     display:flex;
-    flex-direction:row;
+    flex-direction:column;
     justify-content:space-between;
     padding:50px;
-    background-color:darkblue;
+    background-color:darkgray;
+    border-style:inset;
     }
     
     .certs h1{
@@ -724,7 +725,7 @@ background-image:url(imagejpeg_0(2).jpg);
     padding:90px;
     display:flex;
     flex-direction:row;
-    justify-content:space-between;
+    justify-content:space-evenly;
     }
     
     .input-group{
