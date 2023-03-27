@@ -42,7 +42,1096 @@
 
 </ul>
 
+    <html>
+<script src="https://kit.fontawesome.com/58f81d92db.js" crossorigin="anonymous"></script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Anton&family=Roboto+Condensed:wght@700&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Jost&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Jost&display=swap" rel="stylesheet">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Nunito&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Tilt+Warp&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="stylewebsite.css">
+
+
+
+<body>
+<nav>
+<input type="checkbox" id="check">
+<label for="check" class="checkbtn">
+<i class="fas fa-bars"></i></label>
+<label class="logo"><img src="IMG_1702.jpg" style="width:100px;height:80px;"></label>
+<ul>
+<li><a href="/">Home</a></li>
+<li><a href="services.html">Services</a></li>
+<li><a href="/">Tips</a></li>
+<li><a class="active" href="tel:3474817168"><i class="fa-solid fa-phone"></i> Contact Us 347-481-7168</a></li>
+
+<li><a href="/" class="icon-links"><i class="fa-brands fa-facebook"></i></a></li>
+<li><a href="https://twitter.com/_Bluestarmovers" class="icon-links"><i class="fa-brands fa-twitter"></i></a></li>
+<li><a href="https://yelp.com/biz/blue-star-movers-brooklyn-2" class="icon-links"><i class="fa-brands fa-yelp"></i></a></li>
+
+</ul>
+</nav><ul class="icon-menu">
+
+</ul>
+
     
+    
+    
+    
+    
+    
+    
+
+
+<section2>
+<p>One Trip at a Time With</p>
+<h2>BLUESTAR MOVERS, LLC</h2>
+</section2>
+<script>
+function changeBg(){
+const images = [
+'url("View rece.jpg")',
+'url("221231_071853_16.jpeg")',
+'url("221231_071853_20.jpeg")',
+'url("221231_071853_18.jpeg")',
+'url("221231_071853_28.jpeg")',
+'url("221231_071854_36.jpeg")',
+'url("221231_071854_41")',
+'url("221231_071854_42.jpeg")',
+'url("IMG_1545.jpg")',
+'url("IMG_1546.jpg")',
+'url("IMG_1581.jpg")', 
+'url("IMG_1717(1).jpg")',
+'url("imagejpeg_0(2).jpg")',
+'url("imagejpeg_0(3).jpg")',
+'url("imagejpeg_3.jpg")',
+]
+const section2 = document.querySelector('section2')
+const bg = images[Math.floor(Math.random() *
+images.length)];
+section2.style.backgroundImage = bg;
+}
+setInterval(changeBg, 1000)
+</script>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+<section class="form2">
+
+<div class="course-pic">
+<h2 style="font-family:'Tilt Warp', cursive;font-size:80px;">Best for NY.<br> Best for the Country.<br>  Bluestar Movers.</h2>
+<p style="font-family:'Roboto Condensed';color:black;">Moving Quotes in Minutes.  Contact Us Now.</p>
+</div>
+
+
+<div class="course-col2" style="width:100%;">
+<h3>Get  A Quote Free</h3>
+<p style="color:black;line-height:50px;">Or <a href="tel:3474817168"><i class="fa-solid fa-phone"></i> Call</a> or <i class="fa-solid fa-envelope"></i> Email Us at<br> dispatch.bluestarmovers@gmail.com</p>
+
+    <?php 
+if(isset($_POST['submit'])){
+    $to = "ledouard027@gmail.com"; // this is your Email address
+    $from = $_POST['email']; // this is the sender's Email address
+    $name = $_POST['name'];
+    $subject = "Form submission";
+    $subject2 = "Copy of your form submission";
+    $message = $name . " " .  wrote the following:" . "\n\n" . $_POST['message'];
+    $message2 = "Here is a copy of your message " . $name . "\n\n" . $_POST['message'];
+
+    $headers = "From:" . $from;
+    $headers2 = "From:" . $to;
+    mail($to,$subject,$message,$headers);
+    mail($from,$subject2,$message2,$headers2); // sends a copy of the message to the sender
+    echo "Mail Sent. Thank you " . $name . ", we will contact you shortly.";
+    // You can also use header('Location: thank_you.php'); to redirect to another page.
+    }
+?>
+
+
+
+
+
+<div section="hero" id="form">
+<form action="" method="post">
+
+<div class="input-group">
+<input type="text" id="name" required>
+<label for="name">Your Name</label>
+</div>
+
+<div class="input-group">
+<input type="text" id="email" required>
+<label for="">Email Address</label>
+</div>
+
+<div class="input-group">
+<input type="number" id="number" required>
+<label for="">Phone Number</label>
+</div>
+
+<div class="input-group">
+<textarea id="message" rows="8"></textarea>
+<label for="message">Comments</label>
+</div>
+
+<button type="submit">SUBMIT</button>
+</form>
+</div>
+</div>
+    </div>
+</div>
+</section>
+
+
+
+<div class="row3">
+<section class="blurb" style="background-color:lightgray;">
+    <br><br>
+<h1 style="font-family: 'Bebas Neue', cursive;font-size:60px;">A NATIONAL MOVING SERVICE WITH LOCAL TIES</h1>
+<p><img src="imgblurbgirl.jpg" style="width:350px;height:250px;background-color: lightgray;float:right;">Moving is difficult.  It can be even more difficult without the right people.  At Blue Star Movers, we work on the premise that every move is different.  With a combined 10+ years experience, relatable and professional staff, and many many hours on the road, we can expedite your experience so you can get back to your life as quickly as possible.  With a FREE consultation and a Stress-Free Service Guarantee, all potential needs are met at Blue Star Movers.</p>
+</section>
+</div>
+<section class="course" style="background-color:lightgray;width:100%;">
+<br><br><br>
+<h1>Residential And Commercial</h1>
+<f>For over 5 years we have been providing highest standard moving services</f>
+
+<div class="row">
+<div class="course-col">
+    <i class="fa-solid fa-phone-volume"></i>
+<h3>Step 1: Call Us!</h3><br>
+<p>We are a phone call or text (or email) away.  Booking your move is as easy as picking up the phone.</p>
+</div>
+
+<div class="course-col">
+    <i class="fa-solid fa-boxes-packing"></i>
+<h3>Step 2: Pack Up!</h3><br>
+<p>Put your valuables in containers.  Make sure to pack everything carefully, and if you are unsure, don't worry, WE CAN HELP!</p>
+</div>
+
+
+<div class="course-col">
+    <i class="fa-solid fa-truck-fast"></i>
+<h3>Step 3:  Leave the rest to Us!</h3><br>
+<p>We are a fast, professional moving company who will take care of your process from A to Z.</p>
+</div>
+</div>
+
+
+
+
+
+</section>
+
+
+
+<div class="storage" style="padding:100px;display:flex;flex-direction:row;background-color:gainsboro;">
+<div class="imgservicesgirl">
+<img src="691611609.jpg"  style="width:500px;height:500px;  box-shadow: 10px 10px 5px lightblue;">
+</div>
+<div class="storageblurb">
+<h2 style="font-family:'Poppins', sans-serif;font-size:30px">Not ready to move yet?  Having trouble transitioning to your new residence? Our Storage Solutions is your answer.</h2>
+<p style="font-family:'Roboto Condensed', sans-serif;color:black;line-height:2.5">Whether it's inclement weather, downsizing, a fractious housing market or just taking your time, storage can be unavoidable.  Here at Bluestar Movers, we offer the flexibility you need to ensure a smooth moving encounter. <a href="services.html">See our Services</a></p>
+</div>
+</div>
+<div class="packcomplete" style="padding:100px;display:flex;flex-direction:row;background-color:silver">
+<div class="completepack">
+<h2 style="font-family:'Poppins', sans-serif;font-size:30px">Our White Glove Treatment lets you Relax while we Pack</h2>
+<p style="font-family:'Roboto Condensed', sans-serif;color:black;line-height:2.5">With our Complete Bluestar White Glove Treatment, we can complete your moving from A to Z.  We will pack at your residence and unpack at your new residence.  The easiest moving experience ever, courtesy of Bluestar Movers. <a href="/">Contact Us</a></p>
+</div>
+<div class="packcompletepic" style="width:500px;height:500px;">
+<img src="221231_071854_35.jpeg" style="width:500px;height:500px;  box-shadow: 10px 10px 5px lightblue;">
+</div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="certs" style="align-items:center;">
+<div class="cert-blurb">
+<h1 style="font-family: 'Roboto Condensed', sans-serif;">Certified, Insured, and Trusted.  For the most impactful and least stressful experience.</h1>
+</div><br>
+<div class="cert-pic">
+<a href="https://safer.fmcsa.dot.gov/query.asp?searchtype=ANY&query_type=queryCarrierSnapshot&query_param=USDOT&query_string=3154394"><img src="1200px-United_States_Department_of_Transportation_seal.svg.png" style="width:200px;height:250px;border-radius:12px;"></a><a href="https://www.angi.com/companylist/us/ny/fort-edwards/blue-star-movers%2Cllc-reviews-9415313.htm"><img src="angielistlogo.png" style="width:200px;height:250px;border-radius:12px;"></a><a href="https://www.thumbtack.com/reviews/services/478123627235680257/write"><img src="Thumbtack_Logo-700x700.png" style="width:200px;height:250px;border-radius:12px;"></a>
+<img src="licbonins.jpeg" style="width:200px;height:250px;border-radius:12px;">
+</div>
+</div>
+
+<br><br><br>
+
+<h1 style="text-align:center; 
+    padding-top:100px;
+    font-size:40px;
+    font-weight:lighter;
+    font-family: 'Roboto Condensed', sans-serif;"
+    Our Sights and Sounds</h1>
+<div class="slideshow" style="background-color:whitesmoke">
+
+<div class="slider">
+<div class="slides">
+<!--radio buttons-->
+
+<input type="radio" name="radio-btn" id="radio1">
+<input type="radio" name="radio-btn" id="radio2">
+<input type="radio" name="radio-btn" id="radio3">
+<input type="radio" name="radio-btn" id="radio4">
+<input type="radio" name="radio-btn" id="radio5">
+<input type="radio" name="radio-btn" id="radio6">
+<input type="radio" name="radio-btn" id="radio7">
+<input type="radio" name="radio-btn" id="radio8">
+<!--radio buttons-->
+
+<!--slide images-->
+
+<div class="slide first">
+<img src="imagejpeg_0(3).jpg" style="width:750px;height:750px;" alt="">
+</div>
+
+<div class="slide">
+<img src="221231_071854_36.jpeg" alt="">
+</div>
+
+<div class="slide">
+<img src="221231_071853_16.jpeg"alt="">
+</div>
+
+<div class="slide">
+<img src="221231_071854_41.jpeg" alt="">
+</div>
+
+<div class="slide">
+<img src="221231_071853_18.jpeg" alt="">
+</div>
+
+<div class="slide">
+<img src="IMG_1286.jpg" alt="">
+</div>
+
+<div class="slide">
+<img src="View rece.jpg" alt="">
+</div>
+
+<div class="slide">
+<img src="221231_071853_20.jpeg" alt="">
+</div>
+
+<!--slide images end-->
+
+
+
+<!--auto time nav-->
+<div class="navigation-auto">
+<div class="auto-btn1"></div>
+<div class="auto-btn2"></div>
+<div class="auto-btn3"></div>
+<div class="auto-btn4"></div>
+<div class="auto-btn5"></div>
+<div class="auto-btn6"></div>
+<div class="auto-btn7"></div>
+<div class="auto-btn8"></div>
+</div>
+
+
+<!--auto time nav end-->
+
+<!--manual time nav-->
+
+<div class="navigation-manual">
+<label for="radio1" class="manual-btn"></label>
+<label for="radio2" class="manual-btn"></label>
+<label for="radio3" class="manual-btn"></label>
+<label for="radio4" class="manual-btn"></label>
+<label for="radio5" class="manual-btn"></label>
+<label for="radio6" class="manual-btn"></label>
+<label for="radio7" class="manual-btn"></label>
+<label for="radio8" class="manual-btn"></label>
+</div>
+
+
+<!--manual time nav end-->
+</div>
+</div>
+<!--imag slider end-->
+</div>
+
+
+
+<style>
+
+.slideshow{
+margin:0;
+padding:0;
+height:100vh;
+display:flex;
+justify-content:center;
+align-items:center;
+}
+
+.slider{
+width:800px;
+height:500px;
+border-radius:10px;
+overflow:hidden;
+}
+
+.slides{
+width:1000%;
+height:500px;
+display:flex;
+}
+
+.slides input{
+display:none;
+}
+
+.slide{
+width:10%;
+transition:2s;
+}
+
+.slide img{
+width:800px;
+height:500px;
+}
+
+/*manual nav slideshow*/
+
+.navigation-manual{
+position:absolute;
+width:800px;
+margin-top:-40px;
+display:flex;
+justify-content:center;
+
+}
+
+.manual-btn{
+border:2px solid #40d3dc;
+padding:15px;
+border-radius:60px;
+cursor:pointer;
+transition:1s;
+}
+
+.manual-btn:not(:last-child){
+margin-right:40px;
+}
+
+.manual-btn:hover{
+background:darkblue;
+}
+
+#radio1:checked~.first{
+margin-left:0;
+}
+
+#radio2:checked~.first{
+margin-left:-10%;
+}
+
+#radio3:checked~.first{
+margin-left:-20%;
+}
+
+#radio4:checked~.first{
+margin-left:-30%;
+}
+
+#radio5:checked~.first{
+margin-left:-40%;
+}
+    
+#radio6:checked~.first{
+margin-left:-50%;
+}   
+
+#radio7:checked~.first{
+margin-left:-60%;
+}
+
+#radio8:checked~.first{
+margin-left:-70%;
+}  
+    
+</style>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<footer>
+<div class="footer-content">
+<h3>Blue Star Movers</h3>
+<f>A Better Way to Move</f>
+<a href="https://www.bbb.org/us/ny/fort-edward/profile/movers/bluestarmovers-llc-0041-236020688"><img src="IMG_1878.JPG" style="width:100px;height:50px;"></i></a>
+<eul class="socials">
+<li><a href="https://mobile.twitter.com/_Bluestarmovers"><i class="fa-brands fa-facebook"></i></a></li>
+<li><a href="/"><i class="fa-brands fa-twitter"></i></a></li>
+<li><a href="/"><i class="fa-brands fa-instagram"></i></a></li>
+</eul>
+</div>
+<div class="footer-bottom">
+<f>copyright &copy;2022 BlueStarMovers, designed by ME</f>
+</div>
+</footer>
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>
+
+<style>
+*{
+    padding:0;
+    margin:0;
+    text-decoration:none;
+    list-style:none;
+    box-sizing:border-box;
+    
+    }
+    
+    nav{
+    background:#000286;
+    height:80px;
+    width:100%;
+    display:inline-block;
+    position:fixed;
+    top:0;
+    z-index:1000;
+    }
+    
+    label.logo{
+    color:white;
+    font-size:35px;
+    line-height:80px;
+    padding:0 100px;
+    font-weight:bold;
+    }
+    
+    nav ul{
+    float:right;
+    margin-right:20px;
+    }
+    
+    nav ul li{
+    display:inline-block;
+    line-height:80px;
+    margin: 0 5px;
+    font-family: 'Poppins', sans-serif;
+    }
+    
+    nav ul li a{
+    color:white;
+    font-size:25px;
+   
+    }
+    
+    a.active,a:hover{
+    color:lightblue;
+    transition:.5s;
+    }
+    
+    .checkbtn{
+    font-size:30px;
+    color:white;
+    float:right;
+    line-height:80px;
+    margin-right:40px;
+    padding:20px;
+    cursor:pointer;
+    display:none;
+    }
+    
+    #check{
+    display:none;
+    }
+    
+    /*.row3{
+    display:flex;
+    justify-content:space-evenly;
+    font-family: 'Roboto Condensed', sans-serif;
+    }*/
+    
+    .blurb p{
+    font-family: 'Nunito', sans-serif;
+    color:black;
+    }
+    
+    
+    
+    
+    
+    
+    
+section2{
+position:static;
+top:0;
+left:0;
+width:100%;
+height:250vh;
+background-image:url(IMG_1717(1).jpg);
+background-size:100% 100%;
+display:flex;
+flex-direction:column;
+align-items:center;
+font-family: 'Roboto Condensed', sans-serif;
+line-height:300px;
+
+}
+
+section2 p{
+font-family: 'Roboto Condensed', sans-serif;
+font-size:20px;
+}
+
+section2 h2{
+font-size:50px;
+color:#000;
+background:#fff;
+padding:20px 40px;
+mix-blend-mode:screen;
+}
+
+
+ 
+ 
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    /*navbar*/
+    
+    
+    .navbar2{
+    background-color:orange;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    height:40px;
+    width:100%;
+    max-width:1720px;
+    margin:0px 0px;
+    font-size:20px;
+    }
+    
+    .icon-menu{
+    background-color:orange;
+    display:grid;
+    align-items:center;
+    justify-content:space-between;
+    grid-template-columns: repeat(3,auto);
+    list-style:none;
+    text-align:center;
+    width:100%;
+    justify-self:start;
+    font-size:30px;
+    padding:10px;
+    margin-top:80px;
+    }
+    
+    @media(max-width:1000px){
+    label.logo{
+    font-size:30px;
+    padding-left:50px;
+    }
+    
+    nav ul li a{
+    font-size:66px;
+    }
+    }
+    
+    @media(max-width:1000px){
+    .checkbtn{
+    display:block;
+    }
+    
+    ul{
+    position:fixed;
+    width:100%;
+    height:100vh;
+    background:#2c3e50;
+    top:80px;
+    left:-100%;
+    text-align:center;
+    transition:all 0.5s;
+    }
+    
+    nav ul li{
+    display:block;
+    }
+    
+    nav ul li a{
+    font-size:60px;
+    line-height:180px;
+    }
+    
+    a:hover,a.active{
+    background:none;
+    color:#0082e6;
+    }
+    
+    #check:checked ~ ul{
+    left:0;
+    }
+    
+    .body2{
+    margin-top:80px;
+    }
+    }
+    /*body*/
+    
+
+    /*heading*/
+    
+    .heading{
+    width:100%;
+    text-align:center;
+    color:#fff;
+    align-items:center;
+    font-size:30px;
+    text-transform:uppercase;
+    }
+    
+    .heading h1{
+    font-family: 'Roboto Condensed', sans-serif;
+    font-size:75px;
+    }
+    
+    
+    .heading a{
+    text-decoration:none;
+    color:black;
+    font-size:20px;
+    font-weight:bold;
+    border-radius:45px;
+    padding:14px 50px;
+    background-color:#FFC561;
+    display:inline;
+    font-family: 'Roboto Condensed', sans-serif;
+    }
+    
+    .heading a:hover{
+    background-color:#66D3FF;
+    transition:0.6s;
+    }
+    
+    .tours{
+    width:70%;
+    display:flex;
+    justify-content:space-around;
+    }
+    
+    @media screen and (max-width:1000px){
+    
+
+    .heading{
+    align-items:center;
+    }
+    
+    .tours{
+    display:flex;
+    flex-direction:column;
+    }
+    
+    #formimg{
+    display:none;
+    }
+
+    }
+
+    
+    .certs{
+    display:flex;
+    flex-direction:column;
+    justify-content:space-between;
+    padding:130px;
+    background-image:linear-gradient(rgba(0,0,0,0.50),rgba(0,0,0,0.50)),url("imgcerts.jpeg");
+    background-repeat:no-repeat;
+    background-size:cover;
+    border-style:inset;
+    }
+    
+    .certs h1{
+    font-size:30px;
+    color:white;
+    }
+    
+    .cert-pic{
+    display:flex;
+    flex-direction:row;
+    justify-content:space-evenly;
+    
+    
+    
+    }
+    
+    /*body 2nd part*/
+    
+    .row{
+    margin-top:5%;
+    display:flex;
+    justify-content:space-between;
+    }
+    
+    /*body 1st part*/
+    
+    .places{
+    display:inline;
+    text-align:center;
+    border-radius:12px;
+    font-family: 'Roboto Condensed', sans-serif;
+    border-style:solid;
+    border-color:darkblue;
+    border-width:thick;
+    }
+    
+    .places h2{
+    color:white;
+    font-size:35px;
+    letter-spacing:3px;
+    border-radius:1px;
+    padding:30px 30px;
+    background-color:lightblue;
+    }
+    
+    .places a{
+    text-decoration:none;
+    color:red;
+    font-weight:bold;
+    font-size:18px;
+    border-radius:12px;
+    padding:12px 30px;
+    background-color:#fff;
+    }
+    
+    .places a:hover{
+    background-color:#000;
+    letter-spacing:3px;
+    transition:0.6s;
+    }
+    
+    .course{
+    width:80%;
+    margin:auto;
+    text-align:center;
+    padding-top:100px;
+    }
+    
+    
+    h1{
+    font-size:40px;
+    font-weight:600;
+    }
+    
+    p{
+    color:white;
+    font-size:24px;
+    font-weight:300;
+    line-height:22px;
+    padding:10px;
+    font-family: 'Cedarville Cursive', cursive;
+    }
+    
+    /*heading*/
+    
+    .heading a{
+    line-height:60px;
+    }
+    
+    
+    .tours{
+    width:70%;
+    display:flex;
+    justify-content:space-around;
+    }
+    
+    .heading{
+    align-items:center;
+    }
+    
+    /*body 2*/
+    
+    .course{
+    width:80%;
+    margin:auto;
+    text-align:center; 
+    padding-top:100px;
+    font-family: 'Roboto Condensed', sans-serif;
+    }
+    
+    .course-col{
+    flex-basis:31%;
+    background:#D8F4FF;
+    border-radius:10px;
+    margin-bottom:5%;
+    padding:40px 40px;
+    box-sizing:border-box;
+    transition:0.5;
+    width:50px;
+    }
+
+    
+    
+    .course-col i{
+    font-size:50px;
+    color:darkblue;
+    }
+    
+    .course-col p{
+    font-family: 'Nunito', sans-serif;
+    color:black;
+}
+    
+    .course-col:hover{
+    box-shadow:0 0 20px 0px rgba(0,0,0,0.2);
+    }
+    
+    .row{
+    margin-top:5%;
+    display:flex;
+    justify-content:space-between;
+    }
+    
+    @media(max-width:1000px){
+    .row{
+    flex-direction:column;
+    align-items:center;
+    }
+    
+    .course-col{
+    flex-basis:31%;
+    background:#D8F4FF;
+    border-radius:10px;
+    margin-bottom:5%;
+    box-sizing:border-box;
+    transition:0.5;
+    width:550px;
+    position:relative;
+    left:30px;
+    }
+    }
+    
+    .form-title{
+        text-align:center;
+    font-family: 'Roboto Condensed', sans-serif;
+    }
+    
+    .form2{
+    text-align:center;
+    font-family: 'Roboto Condensed', sans-serif;
+    width:100%;
+   
+    padding:90px;
+    display:flex;
+    flex-direction:row;
+    justify-content:space-evenly;
+    }
+    
+    .input-group{
+    margin-bottom:30px;
+    position:relative;
+    }
+    
+    input, textarea{
+    width:100%;
+    padding:10px;
+    outline:0;
+    border:1px solid #fff;
+    color:black;
+    background:transparent;
+    font-size:15px;
+    }
+    
+    .row2{
+    margin-top:5%;
+    display:flex;
+    justify-content:space-evenly;
+    }
+    
+    .course-col2{
+    flex-basis:auto;
+    background:#fff3f3;
+    border-radius:10px;
+    margin-bottom:5%;
+    padding:20px 10px;
+    box-sizing:border-box;
+    transition:0.5;
+    }
+    
+    .form2{
+    text-align:center;
+    }
+    
+    @media(max-width:1000px){
+    .form2{
+    display:flex;
+    flex-direction:column;
+    }
+    }
+    
+
+
+
+
+    /*slideshow*/
+
+    
+
+    
+    
+    
+    
+    
+    
+    
+    
+    /*footer*/
+    
+    .footer-content{
+    background:#fcfcfc;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    flex-direction:column;
+    text-align:center;
+    }
+    
+    footer{
+    background:lightgrey;
+    height:auto;
+    width:100vw;
+    padding-top:40px;
+    }
+    
+    .footer-content h3{
+    font-size:1.8rem;
+    font-weight:400;
+    text-transform:capitalize;
+    line-height:3rem;
+    }
+    
+    .footer-content f{
+    max-width:500px;
+    margin:10px auto;
+    line-height:28px;
+    font-size:14px;
+    }
+    
+    .socials{
+    list-style:none;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    margin:1rem 0 3rem 0;
+    }
+    
+    .socials li{
+    margin:0 10px;
+    }
+    
+    .socials a{
+    text-decoration:none;
+    color:lightcoral;
+    }
+    
+    .socials a i{
+    font-size:1.1rem;
+    transition: color .4s ease;
+    }
+    
+    .socials a:hover i{
+    color:aqua;
+    }
+    
+    .footer-bottom{
+    background:darkgrey;
+    width:100vw;
+    padding: 20px 0;
+    text-align:center;
+    }
+    
+    .footer-bottom f{
+    font-size:14px;
+    word-spacing:2px;
+    text-transform:capitalize;
+    }
+    
+    .footer-bottom span{
+    text-transform:uppercase;
+    }
+
+</style>
     
     
     
