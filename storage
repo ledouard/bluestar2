@@ -1,0 +1,282 @@
+<html>
+<script src="https://kit.fontawesome.com/58f81d92db.js" crossorigin="anonymous"></script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Anton&family=Roboto+Condensed:wght@700&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Jost&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Jost&display=swap" rel="stylesheet">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Nunito&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Tilt+Warp&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="stylewebsite.css">
+
+
+
+<body>
+<nav>
+<input type="checkbox" id="check">
+<label for="check" class="checkbtn">
+<i class="fas fa-bars"></i></label>
+<label class="logo"><img src="IMG_1702.jpg" style="width:100px;height:80px;"></label>
+<ul>
+<li><a href="/">Home</a></li>
+<li><a href="services.html">Services</a></li>
+<li><a href="/">Tips</a></li>
+<li><a class="active" href="tel:3474817168"><i class="fa-solid fa-phone"></i> Contact Us 347-481-7168</a></li>
+
+<li><a href="/" class="icon-links"><i class="fa-brands fa-facebook"></i></a></li>
+<li><a href="/" class="icon-links"><i class="fa-brands fa-twitter"></i></a></li>
+<li><a href="/" class="icon-links"><i class="fa-brands fa-yelp"></i></a></li>
+</ul>
+</nav>
+<ul class="icon-menu" style="background-color:orange;">
+</ul>
+
+
+<div class="body2">
+
+<div class="heading">
+<p>Storage Needs</p>
+<h2 style="font-size:100px;">When You Need It</h2>
+</div>
+</div>
+
+<div class=store style="font-family: 'Poppins', sans-serif;padding:25px;">
+<h2 style="font-size:52px;">We Bring the "Store" To Your Door</h2>
+<f>Flexibility is important.  And moving is stressful.  Not every two moves are the same.  Whether you are upsizing or downsizing, moving to a different town or a different state, or simply moving back with family, our Storage Solutions will take the stress out of your situation.</f>
+</div>
+<div class=storeblurbs style=padding:30px>
+<div class=mobstore>
+<h2>Mobile Transport</h2>
+<f><img src="/" style="width:340px;height:340px;float:right;">Our Mobile Transportation services brings a convenience that the competition may not be able to match.  Our portable boxes are both convenient and easy to use.</f>
+</div>
+<br><br><br><br><br><br><br><br><br>
+<div class=staystore>
+<h2>Traditional On-Site Storage Vault</h2>
+<f><f><img src="/" style="width:340px;height:340px;float:left;">Keeping your things safe is our passion and our duty.  Our Storage Vaults will keep your things dry and stored.  Business reorganizations, home improvement projects, among others are some uses for our On-Site Storage Solutions. </f>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+
+
+</html>
+
+
+<style>
+
+*{
+    padding:0;
+    margin:0;
+    text-decoration:none;
+    list-style:none;
+    box-sizing:border-box;
+}
+
+
+nav{
+    background:#000286;
+    height:80px;
+    width:100%;
+    display:inline-block;
+    position:fixed;
+    top:0;
+    z-index:1000;
+    }
+    
+    label.logo{
+    color:white;
+    font-size:35px;
+    line-height:80px;
+    padding:0 100px;
+    font-weight:bold;
+    }
+    
+    nav ul{
+    float:right;
+    margin-right:20px;
+    }
+    
+    nav ul li{
+    display:inline-block;
+    line-height:80px;
+    margin: 0 5px;
+    font-family: 'Poppins', sans-serif;
+    }
+    
+    nav ul li a{
+    color:white;
+    font-size:20px;
+   
+    }
+    
+    a.active,a:hover{
+    color:lightblue;
+    transition:.5s;
+    }
+    
+    .checkbtn{
+    font-size:30px;
+    color:white;
+    float:right;
+    line-height:80px;
+    margin-right:40px;
+    padding:20px;
+    cursor:pointer;
+    display:none;
+    }
+    
+    #check{
+    display:none;
+    }
+    
+    /*.row3{
+    display:flex;
+    justify-content:space-evenly;
+    font-family: 'Roboto Condensed', sans-serif;
+    }*/
+    
+.navbar2{
+    background-color:orange;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    height:40px;
+    width:100%;
+    max-width:1720px;
+    margin:0px 0px;
+    font-size:20px;
+    }
+    
+    .icon-menu{
+    background-color:orange;
+    display:grid;
+    align-items:center;
+    justify-content:space-between;
+    grid-template-columns: repeat(3,auto);
+    list-style:none;
+    text-align:center;
+    width:100%;
+    justify-self:start;
+    font-size:30px;
+    padding:10px;
+    margin-top:80px;
+    }
+    
+    @media(max-width:1000px){
+    label.logo{
+    font-size:30px;
+    padding-left:50px;
+    }
+    
+    nav ul li a{
+    font-size:66px;
+    }
+    }
+    
+    @media(max-width:1000px){
+    .checkbtn{
+    display:block;
+    }
+    
+    ul{
+    position:fixed;
+    width:100%;
+    height:100vh;
+    background:#2c3e50;
+    top:80px;
+    left:-100%;
+    text-align:center;
+    transition:all 0.5s;
+    }
+    
+    nav ul li{
+    display:block;
+    }
+    
+    nav ul li a{
+    font-size:60px;
+    line-height:180px;
+    }
+    
+    a:hover,a.active{
+    background:none;
+    color:#0082e6;
+    }
+    
+    #check:checked ~ ul{
+    left:0;
+    }
+    
+    .body2{
+    margin-top:80px;
+    }
+    }
+    
+      .body2{
+    width:100%;
+    height:auto;
+    display:flex;
+    flex-direction:column;
+    justify-content:space-around;
+    align-items:center;
+    background-image:linear-gradient(rgba(0,0,0,0.50),rgba(0,0,0,0.50)),url(/);
+    background-position:center;
+    background-size:cover;
+    padding:100px;
+    }
+    
+        .heading{
+    width:30%;
+    text-align:center;
+    color:#fff;
+    align-items:center;
+    font-size:60px;
+    text-transform:uppercase;
+    }
+    
+    h2{
+    font-family: 'Roboto Condensed', sans-serif;
+    }    
+
+f{
+font-family: 'Poppins'
+}
