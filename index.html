@@ -22,34 +22,25 @@
 
 
 <body>
-<header style=background:lightblue;padding:5px;border-style:double;>
-<a href="#" class="logo"><img src="IMG_1702.jpg" style="width:200px;height:60px;"></a>
-  <div class="header-content"  style="float:right;">
+<nav>
+<input type="checkbox" id="check">
+<label for="check" class="checkbtn">
+<i class="fas fa-bars"></i></label>
+<label class="logo"><img src="IMG_1702.jpg" style="width:100px;height:80px;"></label>
+<ul>
+<li><a href="/">Home</a></li>
+<li><a href="services.html">Packing</a></li>
+<li><a href="storage.html">Storage</a></li>
+<li><a class="active" href="tel:3474817168"><i class="fa-solid fa-phone"></i> Contact Us 347-481-7168</a></li>
 
-    
-
-    <input type="checkbox" id="hamburger">
-    <labelss for="hamburger"><span></span></labelss>
-
-    <nav>
-      <ul class="menus">
-        <li><a href="index.html">Home</a></li>
-        <li>
-  <button type="button">Services <span class="arrow"></span></button>
-  <ul class="dropdown">            
-  <li><a href="services.html">Packing</a></li>
-            <li><a href="storage.html">Storage</a></li>
-            
-          </ul>
-        </li>
-        <li><a href="tel:3474817168"><i class="fa-solid fa-phone"></i> Contact Us</a></li>
-        <li><a href="/" class="icon-links"><i class="fa-brands fa-facebook"></i></a></li>
+<li><a href="/" class="icon-links"><i class="fa-brands fa-facebook"></i></a></li>
 <li><a href="https://twitter.com/_Bluestarmovers" class="icon-links"><i class="fa-brands fa-twitter"></i></a></li>
 <li><a href="https://yelp.com/biz/blue-star-movers-brooklyn-2" class="icon-links"><i class="fa-brands fa-yelp"></i></a></li>
-      </ul>
-    </nav>
-  </div>
-</header>
+
+</ul>
+</nav><ul class="icon-menu">
+
+</ul>
 
     
     
@@ -517,251 +508,74 @@ margin-left:-70%;
     
     }
     
+    nav{
+    background:#000286;
+    height:5em;
+    width:100%;
+    display:inline-block;
+    position:fixed;
+    top:0;
+    z-index:1000;
+    }
+    
+    label.logo{
+    color:white;
+    font-size:35px;
+    line-height:80px;
+    padding:0 100px;
+    font-weight:bold;
+    }
+    
+    nav ul{
+    float:right;
+    margin-right:1em;
+    }
+    
+    nav ul li{
+    display:inline-block;
+    line-height:5em;
+    margin: 0 5px;
+    font-family: 'Poppins', sans-serif;
+    }
+    
+    nav ul li a{
+    color:white;
+    font-size:1.5em;
+   
+    }
+    
+    a.active,a:hover{
+    color:lightblue;
+    transition:.5s;
+    }
+    
+    .checkbtn{
+    font-size:30px;
+    color:white;
+    float:right;
+    line-height:8em;
+    margin-right:1em;
+    padding:20px;
+    cursor:pointer;
+    display:none;
+    }
+    
+    #check{
+    display:none;
+    }
+    
+    /*.row3{
+    display:flex;
+    justify-content:space-evenly;
+    font-family: 'Roboto Condensed', sans-serif;
+    }*/
+    
     .blurb p{
     font-family: 'Nunito', sans-serif;
     color:black;
     }
     
-header {
-  position: relative;
-  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.07), 0 1px 2px 0 rgba(0, 0, 0, 0.05);
-}
-
-.header-content {
-  align-items: center;
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 10px 20px;
-  color: #212529;
-}
-
-.logo {
-  text-decoration: none;
-  font-size: 25px;
-  color: inherit;
-  margin-right: 20px;
-}
-
-labelss {
-  padding: 23px 20px;
-  position: absolute;
-  cursor: pointer;
-  right: 0;
-  top: 0;
-}
-
-input[type="checkbox"] {
-  opacity: 0;
-  position: absolute;
-  right: 0;
-}
-
-labelss span {
-  width: 20px;
-  height: 3px;
-  display: block;
-  background: #4f3e3e;
-  position: relative;
-}
-
-
-
-
-labelss span::after, labelss span::before {
-  content: "";
-  position: absolute;
-  display: block;
-  background: inherit;
-  width: inherit;
-  height: inherit;
-}
-
-labelss span::before{
-  top: 8px;
-}
-
-labelss span::after {
-  bottom: 8px;
-}
-
-labelss::before {
-  position: absolute;
-  content: "";
-  width: 58px;
-  height: 49px;
-  top: 0;
-  right: 0;
-}
-
-input[type="checkbox"]:focus + labelss::before {
-  box-shadow: 0 0 20px black;
-}
-
-ul {
-  background: lightblue;
-}
-
-ul li {
-   list-style: none;
-   font-size: 20px;
-   font-family: 'Poppins', sans-serif
-}
-
-ul li button {
-    font-size: inherit;
-    border: none;
-    background-color: transparent;
-    cursor: pointer;
-    width: 100%;
-}
-
-ul li a {
-   display: block;
-   color: inherit;
-   text-decoration: none;
-}
-
-ul li a, ul li button {
-  padding: 0.7rem 1rem;
-  text-align: left;
-}
-
-.menus {
-  position: absolute;
-  top: 3.2rem;
-  left: 0;
-  right: 0;
-}
-
-.dropdown {
-  padding: 2px 1.5rem;
-}
-
-
-input[type="checkbox"] {
-  opacity: 0;
-  /* ... */
-}
-
-input[type="checkbox"]:focus + label::before {
-  box-shadow: 0 0 20px black;
-}
-
-
-.menus {
-  /* ... */
-  /* hide dropdown on small screens */
-  visibility: hidden;
-}
-
-input[type="checkbox"]:checked ~ nav > ul {
-  visibility: visible;
-}
-
-.dropdown {
-  /* ... */
-  height: 0;
-  overflow: hidden;
-}
-
-li:focus-within .dropdown {
-  height: 135px;
-}
-
-.arrow {
-  width: 0.5em;
-  height: 0.5em;
-  display: inline-block;
-  vertical-align: middle;
-  border-left: 0.15em solid currentColor;
-  border-bottom: 0.15em solid currentColor;
-  transform: rotate(-45deg);
-  margin-left: 0.38em;
-  margin-top: -0.25em;
-}
-
-li:focus-within > button > .arrow {
-  transform: rotate(-225deg);
-  margin-top: 4px;
-}
-
-.menus {
-  /* ... */
-  /* smooth transitioning */
-  transform: translateY(-1em);
-  transition: transform ease 0.2s;
-}
-
-input[type="checkbox"]:checked ~ nav > ul {
-  /* ... */
-  transform: translateY(0);
-}
-
-.dropdown {
-  /* ... */
-  transition: height ease 0.2s;
-}
-
-.arrow {
-  /* ... */
-  transition: transform 100ms ease-in-out;
-}
-
-@media (min-width: 1000px) {
-
- .header-content {
-  display: flex;
- }
-
- .menus {
-  position: static;
-  visibility: visible;
-  background: white;
-  display: flex;
-  flex-direction:row;
-  transform: initial;
- }
-
- labelss, input[type="checkbox"] {
-  display: none;
- }
-
- ul li {
-  position: relative;
-  font-size: 24px;
-  font-family: 'Poppins', sans-serif;
-  background:lightblue;
-  display:flex;
- }
-
- ul li a:hover,
- ul li button:hover {
-  background-color: #f2f2f2;
- }
-
- .dropdown {
-  position: absolute;
-  right: 0;
-  left: auto;
-  box-shadow: 0 10px 15px -3px rgba(46, 41, 51, 0.08),
-  0 4px 6px -2px rgba(71, 63, 79, 0.16);
-  z-index: 99;
-  min-width: 10rem;
-  padding: 0;
-  background-color: #fff;
-  border-radius: 0 0 0.5rem 0.5rem; 
- }
-
- ul li:hover .dropdown {
- top:55px;
-  height: 115px;
- }
-
- ul li:hover > button > .arrow {
-  transform: rotate(-225deg);
-  margin-top: 4px;
- }
-}    
+    
     
     
     
@@ -864,11 +678,55 @@ padding:20px 10px;
     margin-top:80px;
     }
     
+    @media(max-width:1000px){
+    label.logo{
+    font-size:30px;
+    padding-left:50px;
+    }
+    
+    nav ul li a{
+    font-size:66px;
+    }
+    }
+    
+    @media(max-width:1000px){
+    .checkbtn{
+    display:block;
+    }
+    
+    ul{
+    position:fixed;
+    width:100%;
+    height:100vh;
+    background:#2c3e50;
+    top:80px;
+    left:-100%;
+    text-align:center;
+    transition:all 0.5s;
+    }
+    
+    nav ul li{
+    display:block;
+    }
+    
+    nav ul li a{
+    font-size:60px;
+    line-height:180px;
+    }
+    
+    a:hover,a.active{
+    background:none;
+    color:#0082e6;
+    }
+    
+    #check:checked ~ ul{
+    left:0;
+    }
     
     .body2{
     margin-top:80px;
     }
-    
+    }
     /*body*/
     
 
