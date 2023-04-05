@@ -83,11 +83,56 @@ setInterval(changeBg, 2000)
 </script>
     
     
+<div class="splash">
+  <h1 class = "splash-header">Welcome to Bluestar Movers LLC</h1>
+</div>    
     
+<style>
+.splash{
+  cursor : pointer;
+  position : fixed;
+  top : 50%;
+  left : 50%;
+  height : 95%;
+  width : 95%;
+  transform : translate(-50%,-50%);    
+  background-color: rgba(0,0,0);
+  transition : all ease-in-out 600ms;
+}
+.hidden{
+  transition : 0.5s;
+  display : none;
+}
+.splash-header {
+  height : 90%;
+  color : white;
+  font-family : 'Roboto Condensed';
+  font-size : 30px;
+  display : flex;
+  justify-content: center;
+  align-items : center;
+}
+
+
+.btnn {
+/*   border : none; */
+/*   padding : 10px; */
+/*   position : fixed; */
+  z-index : -1;
+  left : 50%;
+  transform : translateX(-50%);
+}
+</style>
     
-    
-    
-    
+<script>
+var splashScreen = document.querySelector('.splash');
+splashScreen.addEventListener('click',()=>{
+  splashScreen.style.opacity = 0;
+  setTimeout(()=>{
+    splashScreen.classList.add('hidden')
+  },610)
+})
+</script>
     
     
     
