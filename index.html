@@ -84,8 +84,9 @@ setInterval(changeBg, 2000)
     
     
 <div class="splash">
-  <h1 class = "splash-header">Welcome to Bluestar Movers LLC</h1>
-<img src="img_2091.jpg" style="width:400px;height:500px;"></div>    
+  <h1 class = "splash-header">Welcome to Bluestar Movers LLC
+<img src="img_2091.jpg" style="width:400px;height:500px;">Tap/Click Anywhere To Continue</h1>
+</div>
     
 <style>
 .splash{
@@ -93,11 +94,12 @@ setInterval(changeBg, 2000)
   position : fixed;
   top : 50%;
   left : 50%;
-  height : 95%;
-  width : 95%;
+  height : 100%;
+  width : 100%;
   transform : translate(-50%,-50%);    
   background-color: rgba(0,0,0);
   transition : all ease-in-out 600ms;
+  z-index:1000;
 }
 .hidden{
   transition : 0.5s;
@@ -109,6 +111,7 @@ setInterval(changeBg, 2000)
   font-family : 'Roboto Condensed';
   font-size : 30px;
   display : flex;
+  flex-direction:column;
   justify-content: center;
   align-items : center;
 }
@@ -1156,4 +1159,3 @@ padding:20px 10px;
     }
 
 </style>
-
