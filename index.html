@@ -157,63 +157,8 @@ splashScreen.addEventListener('click',()=>{
 <p style="font-family:'Roboto Condensed';color:black;">Moving Quotes in Minutes.  Contact Us Now.</p>
 </div>
 
+<iframe style="border:none;width:750px;height:750px;"src="https://www.myestimate.io/form/5/we-6692"></iframe>
 
-<div class="course-col2" style="width:100%;">
-<h3>Get  A Quote Free</h3>
-<p style="color:black;line-height:50px;">Or <a href="tel:3474817168"><i class="fa-solid fa-phone"></i> Call</a> or <i class="fa-solid fa-envelope"></i> Email Us at<br> dispatch.bluestarmovers@gmail.com</p>
-
-    <?php 
-if(isset($_POST['submit'])){
-    $to = "ledouard027@gmail.com"; // this is your Email address
-    $from = $_POST['email']; // this is the sender's Email address
-    $name = $_POST['name'];
-    $subject = "Form submission";
-    $subject2 = "Copy of your form submission";
-    $message = $name . " " .  wrote the following:" . "\n\n" . $_POST['message'];
-    $message2 = "Here is a copy of your message " . $name . "\n\n" . $_POST['message'];
-
-    $headers = "From:" . $from;
-    $headers2 = "From:" . $to;
-    mail($to,$subject,$message,$headers);
-    mail($from,$subject2,$message2,$headers2); // sends a copy of the message to the sender
-    echo "Mail Sent. Thank you " . $name . ", we will contact you shortly.";
-    // You can also use header('Location: thank_you.php'); to redirect to another page.
-    }
-?>
-
-
-
-
-
-<div section="hero" id="form">
-<form action="" method="post">
-
-<div class="input-group">
-<input type="text" id="name" required>
-<label for="name">Your Name</label>
-</div>
-
-<div class="input-group">
-<input type="text" id="email" required>
-<label for="">Email Address</label>
-</div>
-
-<div class="input-group">
-<input type="number" id="number" required>
-<label for="">Phone Number</label>
-</div>
-
-<div class="input-group">
-<textarea id="message" rows="8"></textarea>
-<label for="message">Comments</label>
-</div>
-
-<button type="submit">SUBMIT</button>
-</form>
-</div>
-</div>
-    </div>
-</div>
 </section>
 
 
