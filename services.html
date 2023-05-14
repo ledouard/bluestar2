@@ -67,16 +67,17 @@
 <script>
 function changeBg(){
 const images = [
-'url("IMG_2133.jpg")',
-'url("IMG_2152.jpg")',
+'url("IMG_2153.jpg")',
 'url("IMG_2154.jpg")',
 'url("IMG_2164.jpg")',
 'url("IMG_2185.jpg")',
 'url("IMG_2186.jpg")',
 'url("IMG_2140.jpg")',
+
 ]
-const section = document.querySelector('section')}
-const bg = images[Math.floor(Math.random() * images.length)];
+const section = document.querySelector('section')
+const bg = images[Math.floor(Math.random() *
+images.length)];
 section.style.backgroundImage = bg;
 }
 setInterval(changeBg, 1000)
