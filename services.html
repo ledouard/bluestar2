@@ -21,24 +21,332 @@
 </head>
 
 
+<div class="headpart">
+<a href="index.html" class="logo"><img src="IMG_2091.jpg" style="width:120px;height:125px;"></a>
+  <div class="header-content" style="float:right;">
 
-<nav>
-<input type="checkbox" id="check">
-<label for="check" class="checkbtn">
-<i class="fas fa-bars"></i></label>
-<label class="logo"><img src="IMG_2091.jpg" style="width:100px;height:80px;"></label>
-<ul>
-<li><a href="index.html">Home</a></li>
-<li><a href="services.html">Packing</a></li>
-<li><a href="storage.html">Storage</a></li>
-<li><a class="active" href="tel:2122603445"><i class="fa-solid fa-phone"></i> Contact Us 212-260-3445</a></li>
+    
 
-<li><a href="/" class="icon-links"><i class="fa-brands fa-facebook"></i></a></li>
-<li><a href="https://twitter.com/_Bluestarmovers" class="icon-links"><i class="fa-brands fa-twitter"></i></a></li>
-<li><a href="https://yelp.com/biz/blue-star-movers-brooklyn-2" class="icon-links"><i class="fa-brands fa-yelp"></i></a></li>
+    <input type="checkbox" id="hamburger">
+    <label id="ham" for="hamburger"><span></span></label>
 
-</ul>
-</nav><ul class="icon-menu">
+    <nav>
+      <ul class="menus">
+        <li><a href="index.html">Home</a></li>
+        <li>
+  <button type="button" style="font-family: 'Rubik', sans-serif;">Services <span class="arrow"></span></button>
+  <ul class="dropdown">            
+  <li><a href="services.html">Packing</a></li>
+            <li><a href="storage.html">Storage</a></li>
+          </ul>
+        
+        <li><a href="tel:2122603445">Contact Us<br><i class="fa-solid fa-phone" style="font-size:20px;"></i> 212-260-3445</a></li>
+      </ul>      
+    </nav>
+  </div>
+
+</div>
+
+
+
+
+
+
+
+<style>
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.headpart {
+  position: fixed;
+  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.07), 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+  background:#000286;;
+  width:100%;
+  height:8em;
+  top:0;
+  z-index:1000;
+}
+
+.header-content {
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 10px 20px;
+  color: #212529;
+}
+
+.logo {
+  text-decoration: none;
+  font-size: 25px;
+  color: inherit;
+  margin-right: 20px;
+}
+
+#ham {
+  padding: 23px 20px;
+  position: absolute;
+  cursor: pointer;
+  right: 0;
+  top: 0;
+}
+
+input[type="checkbox"] {
+  opacity: 0;
+  position: absolute;
+  right: 0px;
+}
+
+#ham span {
+  width: 20px;
+  height: 3px;
+  display: block;
+  background: white;
+  position: relative;
+  }
+
+
+#ham span::after, #ham span::before {
+  content: "";
+  position: absolute;
+  display: block;
+  background: white;
+  width: inherit;
+  height: inherit;
+  
+}
+
+#ham span::before{
+  top: 8px;
+}
+
+#ham span::after {
+  bottom: 8px;
+}
+
+#ham::before {
+  position: absolute;
+  content: "";
+  width: 58px;
+  height: 49px;
+  top: 0;
+  right: 0;
+}
+
+input[type="checkbox"]:focus + #ham::before {
+  box-shadow: 0 0 20px black;
+}
+
+ul {
+  background: none;
+}
+
+ul li {
+   list-style: none;
+   font-size: 40px;
+   line-height:90px;
+   font-family: 'Poppins', sans-serif;
+   width:300px;
+   background-color:#000286;
+}
+
+ul li button {
+    font-size: inherit;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+    width: 100%;
+      font-family: 'Rubik', sans-serif;
+      color:white;
+}
+
+ul li a {
+   display: block;
+   color: white;
+   text-decoration: none;
+   font-family: 'Rubik', sans-serif;
+}
+
+ul li a, ul li button {
+  padding: 0.7rem 1rem;
+  text-align: left;
+
+}
+
+ ul li a:hover,
+ ul li button:hover {
+  color:lightblue;
+    transition:.5s;
+ }
+
+
+.menus {
+  position: absolute;
+  top: 3.2rem;
+  left: 0;
+  right: 0;
+}
+
+.dropdown {
+  padding: 5px 1.5rem;
+}
+
+
+input[type="checkbox"] {
+  opacity: 0;
+  /* ... */
+}
+
+input[type="checkbox"]:focus + #ham::before {
+  box-shadow: 0 0 20px black;
+}
+
+
+.menus {
+  /* ... */
+  /* hide dropdown on small screens */
+  visibility: hidden;
+}
+
+input[type="checkbox"]:checked ~ nav > ul {
+  visibility: visible;
+}
+
+.dropdown {
+  /* ... */
+  height: 200px;
+  overflow: hidden;
+}
+
+li:focus-within .dropdown {
+  height: 0px;
+}
+
+.arrow {
+  width: 0.5em;
+  height: 0.5em;
+  display: inline-block;
+  vertical-align: middle;
+  border-left: 0.15em solid currentColor;
+  border-bottom: 0.15em solid currentColor;
+  transform: rotate(-45deg);
+  margin-left: 0.38em;
+  margin-top: -0.25em;
+}
+
+li:focus-within > button > .arrow {
+  transform: rotate(-225deg);
+  margin-top: 8px;
+}
+
+.menus {
+  /* ... */
+  /* smooth transitioning */
+  transform: translateY(-1em);
+  transition: transform ease 0.2s;
+}
+
+input[type="checkbox"]:checked ~ nav > ul {
+  /* ... */
+  transform: translateY(0);
+}
+
+.dropdown {
+  /* ... */
+  transition: height ease 0.2s;
+}
+
+.arrow {
+  /* ... */
+  transition: transform 100ms ease-in-out;
+}
+
+@media (min-width: 1000px) {
+
+ .header-content {
+  display: flex;
+ }
+
+ .menus {
+  position: static;
+  visibility: visible;
+  background: white;
+  display: flex;
+  flex-direction:row;
+  transform: initial;
+ }
+
+ #ham, input[type="checkbox"] {
+  display: none;
+ }
+
+ ul li {
+  position: relative;
+  font-size: 30px;
+  font-family: 'Rubik', sans-serif;
+  background:#000286;
+  color:white;
+  display:flex;
+  justify-content:space-evenly;
+  line-height:40px;
+  align-items:center;
+  /*border-style: double;*/
+ }
+ 
+ ul li a, ul li button{
+ color:white;
+ }
+
+ ul li a:hover,
+ ul li button:hover {
+  color:lightblue;
+    transition:.5s;
+ }
+
+ .dropdown {
+  position: absolute;
+  right: 0;
+  left: auto;
+  top:70px;
+  box-shadow: 0 10px 15px -3px rgba(46, 41, 51, 0.08),
+  0 4px 6px -2px rgba(71, 63, 79, 0.16);
+  z-index: 99;
+  min-width: 10rem;
+  padding: 0;
+  background-color: #fff;
+  border-radius: 0 0 0.5rem 0.5rem; 
+  height:0px;
+ }
+
+ ul li:hover .dropdown {
+  height: 130px;
+ }
+
+ ul li:hover > button > .arrow {
+  transform: rotate(-225deg);
+  margin-top: 4px;
+ }
+}
+
+</style>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<ul class="icon-menu">
 
 </ul>
 
@@ -329,61 +637,7 @@ font-size:3em;
     
     }
     
-    nav{
-    background:#000286;
-    height:80px;
-    width:100%;
-    display:inline-block;
-    position:fixed;
-    top:0;
-    }
     
-    label.logo{
-    color:white;
-    font-size:35px;
-    line-height:80px;
-    padding:0 100px;
-    font-weight:bold;
-    }
-    
-    nav ul{
-    float:right;
-    margin-right:20px;
-    }
-    
-   nav ul li{
-    display:inline-block;
-    line-height:5em;
-    margin: 0 5px;
-    font-family:'Rubik', sans-serif;
-    color:#1541B8;
-    }
-    
-    nav ul li a{
-    color:white;
-    font-size:1.5em;
-   
-    }    
-    a.active,a:hover{
-    color:lightblue;
-    transition:.5s;
-    }
-
-    .checkbtn{
-    font-size:30px;
-    color:white;
-    float:right;
-    line-height:80px;
-    margin-right:40px;
-    padding:25px;
-    cursor:pointer;
-    display:none;
-   
-    }
-    
-    #check{
-    display:none;
-    }
     
     
     .navbar2{
@@ -407,60 +661,15 @@ font-size:3em;
     list-style:none;
     text-align:center;
     width:100%;
+    height:3rem;
     justify-self:start;
     font-size:30px;
     padding:10px;
-    margin-top:80px;
+    margin-top:4em;
     }
     
     @media(max-width:1000px){
-    label.logo{
-    font-size:30px;
-    padding-left:50px;
-    }
-    
-    }
-    
-    @media(max-width:1000px){
-    .checkbtn{
-    display:block;
-    }
-    
-    ul{
-    position:fixed;
-    width:100%;
-    height:100vh;
-    background-image:linear-gradient(rgba(0,0,0,0.50),rgba(0,0,0,0.50)),url("IMG_2091.jpg");
-    background-size:100% 100%;
-    background-repeat:no-repeat;
-    top:80px;
-    left:-100%;
-    text-align:center;
-    transition:all 0.5s;
-    }
-    
-    nav ul li{
-    display:block;
-    z-index:1000;
-    }
-    
-    nav ul li a{
-    font-size:80px;
-    line-height:180px;
-    font-family:'Rubik', sans-serif;
-    color:#1541B8;
-    background:white;
-    }
-   
-    a:hover,a.active{
-    background:white;
-    color:#0082e6;
-    }
-    
-    #check:checked ~ ul{
-    left:0;
-    }
-    
+        
     img{
     width:200px;
     height:200px;
