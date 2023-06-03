@@ -41,7 +41,7 @@
     
 
     <input type="checkbox" id="hamburger">
-    <label for="hamburger"><span></span></label>
+    <label id="ham" for="hamburger"><span></span></label>
 
     <nav>
       <ul class="menus">
@@ -98,7 +98,7 @@
   margin-right: 20px;
 }
 
-label {
+#ham {
   padding: 23px 20px;
   position: absolute;
   cursor: pointer;
@@ -112,7 +112,7 @@ input[type="checkbox"] {
   right: 0px;
 }
 
-label span {
+#ham span {
   width: 20px;
   height: 3px;
   display: block;
@@ -121,7 +121,7 @@ label span {
   }
 
 
-label span::after, label span::before {
+#ham span::after, #ham span::before {
   content: "";
   position: absolute;
   display: block;
@@ -131,15 +131,15 @@ label span::after, label span::before {
   
 }
 
-label span::before{
+#ham span::before{
   top: 8px;
 }
 
-label span::after {
+#ham span::after {
   bottom: 8px;
 }
 
-label::before {
+#ham::before {
   position: absolute;
   content: "";
   width: 58px;
@@ -148,7 +148,7 @@ label::before {
   right: 0;
 }
 
-input[type="checkbox"]:focus + label::before {
+input[type="checkbox"]:focus + #ham::before {
   box-shadow: 0 0 20px black;
 }
 
@@ -212,7 +212,7 @@ input[type="checkbox"] {
   /* ... */
 }
 
-input[type="checkbox"]:focus + label::before {
+input[type="checkbox"]:focus + #ham::before {
   box-shadow: 0 0 20px black;
 }
 
@@ -291,7 +291,7 @@ input[type="checkbox"]:checked ~ nav > ul {
   transform: initial;
  }
 
- label, input[type="checkbox"] {
+ #ham, input[type="checkbox"] {
   display: none;
  }
 
