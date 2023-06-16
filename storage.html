@@ -340,7 +340,74 @@ input[type="checkbox"]:checked ~ nav > ul {
 </style>
 
 
+<div class="icon-menu">
+<div class="emailsection">
+<h2><i class="fa-solid fa-envelope"></i>:Bluestarmovers00@gmail.com</h2>
+</div>
+<div class="socialsection">    <div class="twitsec"><a href="https://twitter.com/_Bluestarmovers"><i class="fa-brands fa-twitter"></i></a></div>    <div class="yelpsec"> <a href="https://yelp.com/biz/blue-star-movers-brooklyn-2"><i class="fa-brands fa-yelp"></i></a></div>
+</div>
+</div>
 
+<style>
+    .icon-menu{
+    background-color:orange;
+    display:flex;
+    flex-direction:row;
+    align-items:center;
+    justify-content:space-between;
+    /*grid-template-columns: repeat(3,auto);*/
+    list-style:none;
+    text-align:center;
+    width:100%;
+    justify-self:end;
+    font-size:30px;
+    
+    margin-top:127px;
+    height:40px;
+    }
+    
+    .emailsection h2{
+    font-size:1rem;
+    font-family: 'Roboto Condensed', sans-serif;
+    color:firebrick;
+    }
+    
+    .socialsection{
+    display:flex;
+    flex-direction:row;
+    justify-content:right;
+    width:30%;
+    }
+    
+    .twitsec{
+    height:40px;
+    width:50%;
+    background-color:lightblue; 
+    border-right:1rem solid green;
+    }
+    
+    .twitsec:hover{
+    transition:.5s;
+    background-color:lightskyblue;
+    }
+    
+    .yelpsec{
+   
+    width:50%;
+    background-color:lightpink;
+    right:0;
+  border-right:1rem solid green;
+    
+    }
+    
+      .yelpsec:hover{
+    transition:.5s;
+    background-color:lightcoral;
+    
+    }
+
+   
+    </style>
 
 
 
@@ -638,20 +705,7 @@ color:white;
 
 
 
-    .icon-menu{
-    background-color:orange;
-    display:grid;
-    align-items:center;
-    justify-content:space-between;
-    grid-template-columns: repeat(3,auto);
-    list-style:none;
-    text-align:center;
-    width:100%;
-    justify-self:start;
-    font-size:30px;
-    padding:10px;
-    margin-top:80px;
-    }
+  
     
     @media(max-width:1000px){
        
