@@ -1,0 +1,644 @@
+<html>
+<script src="https://kit.fontawesome.com/58f81d92db.js" crossorigin="anonymous"></script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Anton&family=Roboto+Condensed:wght@700&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Jost&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Jost&display=swap" rel="stylesheet">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Nunito&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Tilt+Warp&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@1,800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="stylewebsite.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@1,800&display=swap" rel="stylesheet">
+
+
+<body>
+
+
+<div class="headpart">
+<a href="index.html" class="logo"><img src="IMG_2091.jpg" style="width:120px;height:125px;"></a>
+  <div class="header-content" style="float:right;">
+
+    
+
+    <input type="checkbox" id="hamburger">
+    <label id="ham" for="hamburger"><span></span></label>
+
+    <nav>
+      <ul class="menus">
+        <li><a href="index.html">Home</a></li>
+        <li>
+  <button type="button" style="font-family: 'Rubik', sans-serif;">Services <span class="arrow"></span></button>
+  <ul class="dropdown">            
+  <li><a href="services.html">Packing</a></li>
+            <li><a href="storage.html">Storage</a></li>
+          </ul>
+        
+        <li><a href="tel:2122603445">Contact Us<br><i class="fa-solid fa-phone" style="font-size:20px;"></i> 212-260-3445</a></li>
+      </ul>      
+    </nav>
+  </div>
+
+</div>
+
+
+
+
+
+
+
+<style>
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.headpart {
+  position: fixed;
+  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.07), 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+  background:#000286;;
+  width:100%;
+  height:8em;
+  top:0;
+  z-index:1000;
+}
+
+.header-content {
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 10px 20px;
+  color: #212529;
+}
+
+.logo {
+  text-decoration: none;
+  font-size: 25px;
+  color: inherit;
+  margin-right: 20px;
+}
+
+#ham {
+  padding: 23px 20px;
+  position: absolute;
+  cursor: pointer;
+  right: 0;
+  top: 0;
+}
+
+input[type="checkbox"] {
+  opacity: 0;
+  position: absolute;
+  right: 0px;
+}
+
+#ham span {
+  width: 20px;
+  height: 3px;
+  display: block;
+  background: white;
+  position: relative;
+  }
+
+
+#ham span::after, #ham span::before {
+  content: "";
+  position: absolute;
+  display: block;
+  background: white;
+  width: inherit;
+  height: inherit;
+  
+}
+
+#ham span::before{
+  top: 8px;
+}
+
+#ham span::after {
+  bottom: 8px;
+}
+
+#ham::before {
+  position: absolute;
+  content: "";
+  width: 58px;
+  height: 49px;
+  top: 0;
+  right: 0;
+}
+
+input[type="checkbox"]:focus + #ham::before {
+  box-shadow: 0 0 20px black;
+}
+
+ul {
+  background: none;
+}
+
+ul li {
+   list-style: none;
+   font-size: 40px;
+   line-height:90px;
+   font-family: 'Poppins', sans-serif;
+   width:300px;
+   background-color:#000286;
+}
+
+ul li button {
+    font-size: inherit;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+    width: 100%;
+      font-family: 'Rubik', sans-serif;
+      color:white;
+}
+
+ul li a {
+   display: block;
+   color: white;
+   text-decoration: none;
+   font-family: 'Rubik', sans-serif;
+}
+
+ul li a, ul li button {
+  padding: 0.7rem 1rem;
+  text-align: left;
+
+}
+
+ ul li a:hover,
+ ul li button:hover {
+  color:lightblue;
+    transition:.5s;
+ }
+
+
+.menus {
+  position: absolute;
+  top: 3.2rem;
+  left: 0;
+  right: 0;
+}
+
+.dropdown {
+  padding: 5px 1.5rem;
+}
+
+
+input[type="checkbox"] {
+  opacity: 0;
+  /* ... */
+}
+
+input[type="checkbox"]:focus + #ham::before {
+  box-shadow: 0 0 20px black;
+}
+
+
+.menus {
+  /* ... */
+  /* hide dropdown on small screens */
+  visibility: hidden;
+}
+
+input[type="checkbox"]:checked ~ nav > ul {
+  visibility: visible;
+}
+
+.dropdown {
+  /* ... */
+  height: 200px;
+  overflow: hidden;
+}
+
+li:focus-within .dropdown {
+  height: 0px;
+}
+
+.arrow {
+  width: 0.5em;
+  height: 0.5em;
+  display: inline-block;
+  vertical-align: middle;
+  border-left: 0.15em solid currentColor;
+  border-bottom: 0.15em solid currentColor;
+  transform: rotate(-45deg);
+  margin-left: 0.38em;
+  margin-top: -0.25em;
+}
+
+li:focus-within > button > .arrow {
+  transform: rotate(-225deg);
+  margin-top: 8px;
+}
+
+.menus {
+  /* ... */
+  /* smooth transitioning */
+  transform: translateY(-1em);
+  transition: transform ease 0.2s;
+}
+
+input[type="checkbox"]:checked ~ nav > ul {
+  /* ... */
+  transform: translateY(0);
+}
+
+.dropdown {
+  /* ... */
+  transition: height ease 0.2s;
+}
+
+.arrow {
+  /* ... */
+  transition: transform 100ms ease-in-out;
+}
+
+@media (min-width: 1000px) {
+
+ .header-content {
+  display: flex;
+ }
+
+ .menus {
+  position: static;
+  visibility: visible;
+  background: white;
+  display: flex;
+  flex-direction:row;
+  transform: initial;
+ }
+
+ #ham, input[type="checkbox"] {
+  display: none;
+ }
+
+ ul li {
+  position: relative;
+  font-size: 30px;
+  font-family: 'Rubik', sans-serif;
+  background:#000286;
+  color:white;
+  display:flex;
+  justify-content:space-evenly;
+  line-height:40px;
+  align-items:center;
+  /*border-style: double;*/
+ }
+ 
+ ul li a, ul li button{
+ color:white;
+ }
+
+ ul li a:hover,
+ ul li button:hover {
+  color:lightblue;
+    transition:.5s;
+ }
+
+ .dropdown {
+  position: absolute;
+  right: 0;
+  left: auto;
+  top:70px;
+  box-shadow: 0 10px 15px -3px rgba(46, 41, 51, 0.08),
+  0 4px 6px -2px rgba(71, 63, 79, 0.16);
+  z-index: 99;
+  min-width: 10rem;
+  padding: 0;
+  background-color: #fff;
+  border-radius: 0 0 0.5rem 0.5rem; 
+  height:0px;
+ }
+
+ ul li:hover .dropdown {
+  height: 130px;
+ }
+
+ ul li:hover > button > .arrow {
+  transform: rotate(-225deg);
+  margin-top: 4px;
+ }
+}
+
+</style>
+
+
+<div class="icon-menu">
+<div class="emailsection">
+<h2><i class="fa-solid fa-envelope"></i>:Bluestarmovers00@gmail.com</h2>
+</div>
+<div class="socialsection">    <div class="twitsec"><a href="https://twitter.com/_Bluestarmovers"><i class="fa-brands fa-twitter"></i></a></div>    <div class="yelpsec"> <a href="https://yelp.com/biz/blue-star-movers-brooklyn-2"><i class="fa-brands fa-yelp"></i></a></div>
+</div>
+</div>
+
+<style>
+    .icon-menu{
+    background-color:orange;
+    display:flex;
+    flex-direction:row;
+    align-items:center;
+    justify-content:space-between;
+    /*grid-template-columns: repeat(3,auto);*/
+    list-style:none;
+    text-align:center;
+    width:100%;
+    justify-self:end;
+    font-size:30px;
+    
+    margin-top:127px;
+    height:40px;
+    }
+    
+    .emailsection h2{
+    font-size:1rem;
+    font-family: 'Roboto Condensed', sans-serif;
+    color:firebrick;
+    }
+    
+    .socialsection{
+    display:flex;
+    flex-direction:row;
+    justify-content:right;
+    width:30%;
+    }
+    
+    .twitsec{
+    height:40px;
+    width:50%;
+    background-color:lightblue; 
+    border-right:1rem solid green;
+    }
+    
+    .twitsec:hover{
+    transition:.5s;
+    background-color:lightskyblue;
+    }
+    
+    .yelpsec{
+   
+    width:50%;
+    background-color:lightpink;
+    right:0;
+  border-right:1rem solid green;
+    
+    }
+    
+    .yelpsec i{
+    color:red;
+    }
+    
+      .yelpsec:hover{
+    transition:.5s;
+    background-color:lightcoral;
+    
+    }
+
+   
+    </style>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="body2">
+
+<div class="heading">
+<img src="IMG_2091.jpg" style="width:400px;height:400px;box-shadow:0 0 40px 0px rgba(0,0,0,0.2);">
+<h2 style="font-size:100px;font-family: 'Rubik', sans-serif;color:#02B4F7">Bluestar Movers LLC</h2>
+<p style="font-family: 'Rubik', sans-serif;font-size:50px;color:black;">A National Moving Company with Local Ties</p>
+</div>
+<iframe style="border:none;width:750px;height:750px;"src="https://www.myestimate.io/form/5/we-6692"></iframe>
+</div>
+
+<style>
+
+  .body2{
+    width:100%;
+    height:auto;
+    display:flex;
+    flex-direction:row;
+    justify-content:space-around;
+    align-items:center;
+    background-image:linear-gradient(rgba(0,0,0,0.50),rgba(0,0,0,0.50)),url(img-11.jpg);
+    background-position:center;
+    background-size:cover;
+    padding:100px;
+   
+    }
+    
+    @media(max-width:1000px){
+    .body2{
+    flex-direction:column;
+    }
+    }
+    
+        .heading{
+    width:80%;
+    text-align:center;
+    color:#fff;
+    align-items:center;
+    font-size:60px;
+    text-transform:uppercase;
+    }
+    
+    h2{
+    font-family: 'Roboto Condensed', sans-serif;
+    }    
+
+f{
+font-family: 'Poppins'
+}
+
+    
+
+</style>
+
+
+
+<div class="abtblurb">
+<img src="/" style="width:400px;height:400px;float:right">
+<h3>Who We Are</h3><br>
+<r>We are dedicated professionals committed to exceptional service.  We consider ourselves partners with all of our clients and we pride ourselves as trusted companions in countless moving experiences.  As New Yorkers, we know stress, and as New Yorkers, we have moving experience.  Our years of experience keep us ever committed to priving exceptional service for our valued customers.</r>
+<img src="/" style="width:400px;height:400px;float:left">
+<h3>Meet Kareem Jones, Owner of Bluestar Movers LLC</h3>
+<r>Kareem has honed hs skills and developed a deep understanding of the nuances and challenges involved in every aspect of the moving process through his 5 years of managing his LLC, and countless years prior moving clients.  His hands-on experience and customer-centric approach gives him a unique and personalized view on moving and storage solutions.
+<img src="/" style="width:400px;height:400px;float:right">
+<h3>The BlueStar Guarantee</h3>
+<r>At BlueStar Movers LLC, we prioritize trust and transparency.  We understand the significance of entrusting your valuables to a moving company (or anyone) which is why we strive to earn your trust from the moment you contanct. us.  Our team of experience professionals, led by Kareem, workes tirelessly to exceed experctations and provide an seamless, stress-free moving expericen tailored to your unique requirements.  We are a partner for your moving a storage needs, whether it is across state lines or the next town over.  Contact us today.</r> 
+
+
+<style>
+
+.abtblurb{
+padding:20px;
+line-height:50px;
+font-family: 'Roboto Condensed', sans-serif;
+}
+
+.abtblurb h3{
+font-size:40px;
+}
+
+.abtblurb r{
+font-size:30px;
+
+</style>
+
+
+<footer>
+<div class="footer-content">
+<h3>Blue Star Movers</h3>
+<f>A Better Way to Move</f>
+<f>US DOT: 3154394 |   MC#: 137828 | <i class="fa-solid fa-phone"></i> 212-260-3445 | <i class="fa-solid fa-envelope"></i> Bluestarmovers00@gmail.com</f>
+<br>
+<div class="businesshrs">
+<div class="hrs">
+<j>Hours of Operation</j><f><li>Mon 8AM-6PM</li><li>Tue 8AM-6PM</li><li>Wed 8AM-6PM</li><li>Thu 8AM-6PM</li><li>Fri 8AM-6PM</li><li>Sat 8AM-6PM</li></f>
+</div>
+<div class="address">
+<j>Address</j><f><li>90 East St</li><li>New York NY 10128</li></f></div></div>
+<a href="https://www.bbb.org/us/ny/fort-edward/profile/movers/bluestarmovers-llc-0041-236020688"><img src="IMG_1878.JPG" style="width:100px;height:50px;"></i></a>
+<eul class="socials">
+<!--<li><a href="/"><i class="fa-brands fa-facebook"></i></a></li>-->
+<li><a href="https://mobile.twitter.com/_Bluestarmovers"><i class="fa-brands fa-twitter"></i></a></li>
+<li><a href="https://yelp.com/biz/blue-star-movers-brooklyn-2"><i class="fa-brands fa-yelp"></i></a></li>
+</eul>
+<div class="footer-bottom">
+<f>copyright &copy;2022 BlueStarMovers LLC</f>
+</div>
+</footer>
+
+<style>
+.businesshrs{
+display:flex;
+flex-direction:row;
+justify-content:space-between;
+width:40%;
+}
+
+.hrs{
+list-style:none;
+}
+
+.hrs j, .address j{
+font-size:2rem;
+font-family: 'Roboto Condensed', sans-serif;
+color:white;
+}
+
+    .footer-content{
+    background-image:linear-gradient(rgba(0,0,0,0.50),rgba(0,0,0,0.50)),url("221231_071854_35.jpeg");
+    background-size:cover;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    flex-direction:column;
+    text-align:center;
+    
+    }
+    
+    footer{
+    background:lightgrey;
+    height:auto;
+    width:100%;
+    padding-top:40px;
+    }
+    
+    .footer-content h3{
+    font-size:1.8rem;
+    font-weight:400;
+    text-transform:capitalize;
+    line-height:3rem;
+    color:white;
+    }
+    
+    .footer-content f{
+    max-width:600px;
+    margin:10px auto;
+    line-height:28px;
+    font-size:14px;
+    color:white;
+    }
+    
+    .socials{
+    list-style:none;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    margin:1rem 0 3rem 0;
+    }
+    
+    .socials li{
+    margin:0 10px;
+    }
+    
+    .address{
+    list-style:none;
+    }
+    
+    .socials a{
+    text-decoration:none;
+    color:lightcoral;
+    }
+    
+    .socials a i{
+    font-size:1.1rem;
+    transition: color .4s ease;
+    }
+    
+    .socials a:hover i{
+    color:aqua;
+    }
+    
+    .footer-bottom{
+    background:darkgrey;
+    width:100%;
+    padding: 20px 0;
+    text-align:center;
+    }
+    
+    .footer-bottom f{
+    font-size:14px;
+    word-spacing:2px;
+    text-transform:capitalize;
+    }
+    
+    .footer-bottom span{
+    text-transform:uppercase;
+    }
+
+</style>
