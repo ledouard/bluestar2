@@ -531,6 +531,147 @@ padding-top:70px;
 </style>
 
 
+<style>
+    /* CSS styles for the slideshow container and slides */
+    .slideshow-container {
+      position: relative;
+      width: 100%;
+      height: 300px;
+      overflow: hidden;
+      padding:60px;
+    }
+
+    .slide {
+      display: none;
+      position: relative;
+      width: 80%;
+      height: 100%;
+      left:10%;
+      top:60px;
+    }
+
+    /* CSS styles for the arrow buttons */
+    .prev,
+    .next {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      font-size: 18px;
+      font-weight: bold;
+      color: #fff;
+      background-color: rgba(0, 0, 0, 0.5);
+      padding: 10px;
+      cursor: pointer;
+      user-select: none;
+    }
+
+    .prev {
+      left: 10px;
+    }
+
+    .next {
+      right: 10px;
+    }
+    
+    
+    
+   
+    }
+    
+    .slide h2{
+    
+    }
+  </style>
+
+
+  <div class="slideshow-container">
+  <h2>Our Reviews</h2>
+    <div class="slide">
+      <h2>PREPARE AHEAD OF TIME</h2>
+      <p>Starting early can save everyone a huge headache.  Having your valuables prepared and packed before we come will ensure that you personally are more organized, and will make the moving process as stress-less as possible.  Making a list is even better.  Packing for only an hour a day starting weeks from the moving date will make the task seem less daunting.</p>
+    </div>
+    <div class="slide">
+      <h2>BOXES BOXES BOXES</h2>
+      <p>Invest in quality boxes that are the right sie for your valuables and clearly label them fragile or anything else.  Used boxes are okay until they break or worse, release their payload of bugs or infections or whatever else.  Remember to not overpack as well.</p>
+    </div>
+    <div class="slide">
+      <img src="image3.jpg" alt="Slide 3">
+    </div>
+
+    <a class="prev">&#10094;</a>
+    <a class="next">&#10095;</a>
+  </div>
+
+  <script>
+    // JavaScript logic for the slideshow
+    var slideIndex = 0;
+    var slides = document.getElementsByClassName("slide");
+    var prevButton = document.querySelector(".prev");
+    var nextButton = document.querySelector(".next");
+
+    showSlide(slideIndex);
+
+    function showSlide(n) {
+      if (n >= slides.length) {
+        slideIndex = 0;
+      } else if (n < 0) {
+        slideIndex = slides.length - 1;
+      } else {
+        slideIndex = n;
+      }
+
+      for (var i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+      }
+
+      slides[slideIndex].style.display = "block";
+    }
+
+    prevButton.addEventListener("click", function() {
+      showSlide(slideIndex - 1);
+    });
+
+    nextButton.addEventListener("click", function() {
+      showSlide(slideIndex + 1);
+    });
+  </script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 <footer>
 <div class="footer-content">
 <h3>Blue Star Movers</h3>
@@ -587,7 +728,7 @@ color:white;
     background:lightgrey;
     height:auto;
     width:100%;
-    padding-top:60px;
+    padding-top:40px;
     }
     
     .footer-content h3{
