@@ -836,7 +836,11 @@ li2:hover {
     <!--<a href="#" class="button">Select</a>-->
   </div>
   
-  <div class="pricing-plan">
+  
+  <div class="box">
+<span class="borderLine"></span>
+  <div id="bestprice" class="pricing-plan">
+  <p><i class="fa-solid fa-star"></i>BEST DEAL<i class="fa-solid fa-star"></i></p>
     <h2>Silver Moving Plan</h2>
     <div class="price">Starting at $1599</div>
     <ful class="features">
@@ -846,6 +850,9 @@ li2:hover {
     </ful>
     <!--<a href="#" class="button">Select</a>-->
   </div>
+  </div>
+  
+  
   
   <div class="pricing-plan">
     <h2>Gold Moving Plan</h2>
@@ -861,6 +868,102 @@ li2:hover {
   </div>
 </div>
 <style>
+
+
+.pricing-plan p{
+color:gold;
+}
+
+
+#bestprice{
+position:absolute;
+inset:10px;
+z-index:20;
+padding:50px 40px;
+}
+
+.box{
+position:relative;
+width:380px;
+height:420px;
+background:#1c1c1c;
+border-radius:8px;
+overflow:hidden;
+}
+
+.box::before{
+content:'';
+position:absolute;
+top:-50%;
+left:-50%;
+width:380px;
+height:420px;
+background:linear-gradient(0deg,transparent, transparent,#45f3ff,#45f3ff,#45f3ff);
+z-index:1;
+transform-origin:bottom right;
+animation:animate 6s linear infinite;
+}
+
+.box::after{
+content:'';
+position:absolute;
+top:-50%;
+left:-50%;
+width:380px;
+height:420px;
+background:linear-gradient(0deg,transparent, transparent,#45f3ff,#45f3ff,#45f3ff);
+z-index:1;
+transform-origin:bottom right;
+animation:animate 6s linear infinite;
+animation-delay:-3s;
+}
+
+.borderLine{
+position:absolute;
+top:0;
+inset:0;
+
+}
+
+.borderLine:before{
+content:'';
+position:absolute;
+top:-50%;
+left:-50%;
+width:380px;
+height:420px;
+background:linear-gradient(0deg,transparent, transparent,#ff2770,#ff2770,#ff2770);
+z-index:1;
+transform-origin:bottom right;
+animation:animate 6s linear infinite;
+animation-delay:-1.5s;
+}
+
+.borderLine:after{
+content:'';
+position:absolute;
+top:-50%;
+left:-50%;
+width:380px;
+height:420px;
+background:linear-gradient(0deg,transparent, transparent,#ff2770,#ff2770,#ff2770);
+z-index:1;
+transform-origin:bottom right;
+animation:animate 6s linear infinite;
+animation-delay:-4.5s;
+}
+
+
+
+@keyframes animate{
+0%{
+transform:rotate(0deg);
+}
+100%{
+transform:rotate(360deg);
+}
+}
+
 
 
 
