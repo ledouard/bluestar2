@@ -55,10 +55,188 @@
 
     
 
-    <input type="checkbox" id="hamburger">
-    <label id="ham" for="hamburger"><span></span></label>
+    <!--<input type="checkbox" id="hamburger">
+    <label id="ham" for="hamburger"><span></span></label>-->
 
     <nav>
+    
+    
+    
+    <!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {
+  font-family: "Lato", sans-serif;
+  transition: background-color .5s;
+}
+
+header {
+  position: relative;
+   
+  
+}
+
+.header img{
+position:absolute;
+}
+
+.myfrontnav{
+  align-items: center;
+  
+  margin: 0 auto;
+  padding: 10px 20px;
+ box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.07), 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+ width:100%;
+
+}
+
+
+.sidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #020057;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+  border-right:solid blue;
+  line-height:70px;
+}
+
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 2rem;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+  font-family: 'Rubik', sans-serif
+}
+
+.sidenav a:hover {
+  color: #f1f1f1;
+}
+
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+#main {
+  transition: margin-left .5s;
+  padding: 16px;
+}
+
+.opennav{
+position:absolute;
+float:right;
+top:0;
+right:0;
+padding:15px;
+}
+
+
+  }
+  
+  
+
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+
+@media (min-width: 1000px) {
+.opennav{
+display:none;
+}
+}
+
+@media (max-width:1000px){
+nav ul li a{
+display:none;
+}
+
+.opennav{
+color:white;
+}
+
+.myfrontnav{
+height:4rem;
+}
+}
+
+
+</style>
+</head>
+<body>
+<div class="header">
+</nav>
+
+
+
+<div id="mySidenav" class="sidenav">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  <a href="aboutus.html">About Us</a>
+  <a href="services.html">Packing</a>
+  <a href="storage.html">Storage</a>
+  <a href="tel:2122603445">Contact Us</a>
+</div>
+
+<div id="main">
+  
+  <div class="opennav"><span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span></div>
+</div>
+
+<script>
+function openNav() {
+  document.getElementById("mySidenav").style.width = "250px";
+  document.getElementById("main").style.marginLeft = "250px";
+  document.body.style.backgroundColor = "rgba(0,0,0,0.4)";
+}
+
+function closeNav() {
+  document.getElementById("mySidenav").style.width = "0";
+  document.getElementById("main").style.marginLeft= "0";
+  document.body.style.backgroundColor = "white";
+}
+</script>
+   
+</body>
+</html> 
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
       <ul class="menus">
         <li><a href="index.html">Home</a></li>
         <li>
@@ -116,59 +294,6 @@
   margin-right: 20px;
 }
 
-#ham {
-  padding: 23px 20px;
-  position: absolute;
-  cursor: pointer;
-  right: 0;
-  top: 0;
-}
-
-input[type="checkbox"] {
-  opacity: 0;
-  position: absolute;
-  right: 0px;
-}
-
-#ham span {
-  width: 20px;
-  height: 3px;
-  display: block;
-  background: white;
-  position: relative;
-  }
-
-
-#ham span::after, #ham span::before {
-  content: "";
-  position: absolute;
-  display: block;
-  background: white;
-  width: inherit;
-  height: inherit;
-  
-}
-
-#ham span::before{
-  top: 8px;
-}
-
-#ham span::after {
-  bottom: 8px;
-}
-
-#ham::before {
-  position: absolute;
-  content: "";
-  width: 58px;
-  height: 49px;
-  top: 0;
-  right: 0;
-}
-
-input[type="checkbox"]:focus + #ham::before {
-  box-shadow: 0 0 20px black;
-}
 
 ul {
   background: none;
