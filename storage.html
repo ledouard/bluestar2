@@ -43,36 +43,20 @@
 
 
 
-<div class="headpart">
-<a href="index.html" class="logo"><img src="IMG_2091.jpg" style="width:120px;height:125px;"></a>
-  <div class="header-content" style="float:right;">
-
-    
-
-    <input type="checkbox" id="hamburger">
-    <label id="ham" for="hamburger"><span></span></label>
-
-    <nav>
-      <ul class="menus">
-        <li><a href="index.html">Home</a></li>
-        <li>
-  <button type="button" style="font-family: 'Rubik', sans-serif;">Services <span class="arrow"></span></button>
-  <ul class="dropdown">            
-  <li><a href="services.html">Packing</a></li>
-            <li><a href="storage.html">Storage</a></li>
-            
-          </ul>
-        <li><a href="aboutus.html">About Us</a></li>
-        <li><a href="tel:2122603445">Contact Us<br><i class="fa-solid fa-phone" style="font-size:20px;"></i> 212-260-3445</a></li>
-      </ul>      
-    </nav>
-  </div>
-
+<nav>
+<div class="menupart">
+<ul class="choices"><li><img src="IMG_2091.jpg" style="width:80px;height:80px;"></li><li><a href="index.html">Home</a></li> <li><a href="services.html">Packing</a></li> <li><a href="storage.html">Storage</a></li> <li><a href="aboutus.htm">About Us</a></li></ul>
+<input type="checkbox" id="active">
+<label for="active" class="menu-btn"><i class="fas fa-bars"></i></label>
+<div class="wrapper">
+<ul class="menu">
+<li><a href="index.html">Home</a></li>
+<li><a href="services.html">Packing</a></li>
+<li><a href="storage.html">Storage</a></li>
+<li><a href="aboutus.html">About Us</a></li>
+</ul>
 </div>
-
-
-
-
+</nav>
 
 
 
@@ -86,283 +70,178 @@
   box-sizing: border-box;
 }
 
-.headpart {
-  position: fixed;
-  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.07), 0 1px 2px 0 rgba(0, 0, 0, 0.05);
-  background:#000286;;
-  width:100%;
-  height:8em;
-  top:0;
-  z-index:1000;
-border-bottom:3px solid blue;
+
+
+.menupart{
+height:10em;
+background:linear-gradient(-135deg, #c850c0,#4158d8);
+border-bottom:1em solid blue;
 }
 
-.header-content {
-  align-items: center;
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 10px 20px;
-  color: #212529;
+
+
+.choices{
+
+display:flex;
+flex-direction:row;
+align-items:center;
+justify-content:space-between;
+font-size:30px;
+padding-left:10rem;
+padding-right:8rem;
+padding-top:3rem;
+font-family: 'Rubik', sans-serif;
 }
 
-.logo {
-  text-decoration: none;
-  font-size: 25px;
-  color: inherit;
-  margin-right: 20px;
+.choices a{
+color:white;
 }
 
-#ham {
-  padding: 23px 20px;
-  position: absolute;
-  cursor: pointer;
-  right: 0;
-  top: 0;
-}
-
-input[type="checkbox"] {
-  opacity: 0;
-  position: absolute;
-  right: 0px;
-}
-
-#ham span {
-  width: 20px;
-  height: 3px;
-  display: block;
-  background: white;
-  position: relative;
-  }
-
-
-#ham span::after, #ham span::before {
-  content: "";
-  position: absolute;
-  display: block;
-  background: white;
-  width: inherit;
-  height: inherit;
-  
-}
-
-#ham span::before{
-  top: 8px;
-}
-
-#ham span::after {
-  bottom: 8px;
-}
-
-#ham::before {
-  position: absolute;
-  content: "";
-  width: 58px;
-  height: 49px;
-  top: 0;
-  right: 0;
-}
-
-input[type="checkbox"]:focus + #ham::before {
-  box-shadow: 0 0 20px black;
-}
-
-ul {
-  background: none;
-}
-
-ul li {
-   list-style: none;
-   font-size: 40px;
-   line-height:90px;
-   font-family: 'Poppins', sans-serif;
-   width:300px;
-   background-color:#000286;
-}
-
-ul li button {
-    font-size: inherit;
-    border: none;
-    background-color: transparent;
-    cursor: pointer;
-    width: 100%;
-      font-family: 'Rubik', sans-serif;
-      color:white;
-}
-
-ul li a {
-   display: block;
-   color: white;
-   text-decoration: none;
-   font-family: 'Rubik', sans-serif;
-}
-
-ul li a, ul li button {
-  padding: 0.7rem 1rem;
-  text-align: left;
-
-}
-
- ul li a:hover,
- ul li button:hover {
-  color:lightblue;
+.choices a:hover{
     transition:.5s;
- }
+    color:pink;
+    }
 
-
-.menus {
-  position: absolute;
-  top: 3.2rem;
-  left: 0;
-  right: 0;
+@media (max-width: 1000px) {
+.choices a{
+font-size:25px;
 }
-
-.dropdown {
-  padding: 5px 1.5rem;
 }
 
 
-input[type="checkbox"] {
-  opacity: 0;
-  /* ... */
+
+
+
+
+.wrapper{
+position:fixed;
+top:0;
+left:0;
+height:100%;
+width:100%;
+background:linear-gradient(-135deg, #c850c0,#4158d8);
+clip-path:circle(25px at calc(100% - 45px) 45px);
+transition:all 0.3s ease-in-out;
+
 }
 
-input[type="checkbox"]:focus + #ham::before {
-  box-shadow: 0 0 20px black;
+#active:checked ~ .wrapper{
+clip-path:circle(75%);
+
+
+}
+
+.menu{
+font-family: 'Rubik', sans-serif;
+
 }
 
 
-.menus {
-  /* ... */
-  /* hide dropdown on small screens */
-  visibility: hidden;
+
+.menu-btn{
+position:fixed;
+right:20px;
+top:20px;
+z-index:2;
+text-align:center;
+line-height:50px;
+height:50px;
+width:50px;
+border-radius:50%;
+color:#fff;
+font-size:20px;
+cursor:pointer;
+background:linear-gradient(-135deg, #c850c0,#4158d8);
+transition:all 0.3s ease;
+z-index:4;
 }
 
-input[type="checkbox"]:checked ~ nav > ul {
-  visibility: visible;
+
+#active:checked ~ menu-btn{
+
+
+background:#fff;
+color:#4158d8;
 }
 
-.dropdown {
-  /* ... */
-  height: 200px;
-  overflow: hidden;
+#active:checked ~ .menu-btn i:before{
+content:"\f00d";
+
+
+}
+.wrapper ul{
+position:absolute;
+top:50%;
+left:50%;
+transform:translate(-50%, -50%);
+list-style:none;
+text-align:center;
 }
 
-li:focus-within .dropdown {
-  height: 0px;
+.wrapper ul li{
+margin:15px 0;
 }
 
-.arrow {
-  width: 0.5em;
-  height: 0.5em;
-  display: inline-block;
-  vertical-align: middle;
-  border-left: 0.15em solid currentColor;
-  border-bottom: 0.15em solid currentColor;
-  transform: rotate(-45deg);
-  margin-left: 0.38em;
-  margin-top: -0.25em;
+.wrapper ul li a{
+color:#fff;
+text-decoration:none;
+font-size:55px;
+font-weight:500;
+padding:5px 50px;
+positioN:relative;
+line-height:120px;
+transition:all 0.3s ease;
 }
 
-li:focus-within > button > .arrow {
-  transform: rotate(-225deg);
-  margin-top: 8px;
+
+.wrapper ul li a:after{
+content:"";
+position:absolute;
+left:0;
+width:100%;
+height:100px;
+background:#fff;
+border-radius:50px;
+transform:scaleY(0);
+z-index:-1;
+transition:all 0.3s ease;
 }
 
-.menus {
-  /* ... */
-  /* smooth transitioning */
-  transform: translateY(-1em);
-  transition: transform ease 0.2s;
+.wrapper ul li a:hover:after{
+transform:scaleY(1);
 }
 
-input[type="checkbox"]:checked ~ nav > ul {
-  /* ... */
-  transform: translateY(0);
+.wrapper ul li a:hover{
+color:#c850c0;
 }
 
-.dropdown {
-  /* ... */
-  transition: height ease 0.2s;
-}
-
-.arrow {
-  /* ... */
-  transition: transform 100ms ease-in-out;
-}
-
-@media (min-width: 1000px) {
-
- .header-content {
-  display: flex;
- }
-
- .menus {
-  position: static;
-  visibility: visible;
-  background: white;
-  display: flex;
-  flex-direction:row;
-  transform: initial;
- }
-
- #ham, input[type="checkbox"] {
-  display: none;
- }
-
- ul li {
-  position: relative;
-  font-size: 30px;
-  font-family: 'Rubik', sans-serif;
-  background:#000286;
-  color:white;
-  display:flex;
-  justify-content:space-evenly;
-  line-height:40px;
-  align-items:center;
-  /*border-style: double;*/
- }
- 
- ul li a, ul li button{
- color:white;
- }
-
- ul li a:hover,
- ul li button:hover {
-  color:lightblue;
-    transition:.5s;
- }
-
- .dropdown {
-  position: absolute;
-  right: 0;
-  left: auto;
-  top:70px;
-  box-shadow: 0 10px 15px -3px rgba(46, 41, 51, 0.08),
-  0 4px 6px -2px rgba(71, 63, 79, 0.16);
-  z-index: 99;
-  min-width: 10rem;
-  padding: 0;
-  background-color: #fff;
-  border-radius: 0 0 0.5rem 0.5rem; 
-  height:0px;
- }
-
- ul li:hover .dropdown {
-  height: 130px;
- }
-
- ul li:hover > button > .arrow {
-  transform: rotate(-225deg);
-  margin-top: 4px;
- }
+input{
+display:none;
 }
 
 </style>
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 <div class="icon-menu">
 <div class="emailsection">
-<h2><i class="fa-solid fa-envelope"></i>:Bluestarmovers00@gmail.com</h2>
+<h2><i class="fa-solid fa-phone"></i>   212-260-3445</h2>
 </div>
 <div class="socialsection">    <div class="twitsec"><a href="https://twitter.com/_Bluestarmovers"><i class="fa-brands fa-twitter"></i></a></div>    <div class="yelpsec"> <a href="https://yelp.com/biz/blue-star-movers-brooklyn-2"><i class="fa-brands fa-yelp"></i></a></div>
 </div>
@@ -374,20 +253,22 @@ input[type="checkbox"]:checked ~ nav > ul {
     display:flex;
     flex-direction:row;
     align-items:center;
-    justify-content:space-between;
+    justify-content:space-evenly;
     /*grid-template-columns: repeat(3,auto);*/
     list-style:none;
     text-align:center;
     width:100%;
     justify-self:end;
     font-size:30px;
-    
-    margin-top:127px;
+    padding:20px;
+    padding-left:40px;
+    padding-right:40px;
+    /*margin-top:100px;*/
     height:40px;
     }
     
     .emailsection h2{
-    font-size:1rem;
+    font-size:2rem;
     font-family: 'Roboto Condensed', sans-serif;
     color:firebrick;
     }
