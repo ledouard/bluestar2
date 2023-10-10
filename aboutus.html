@@ -51,86 +51,29 @@
 
 
 <nav>
-<div class="menupart">
-<ul class="choices"><li><img src="IMG_2091.jpg" style="width:80px;height:80px;"></li><li><a href="index.html">Home</a></li> <li><a href="services.html">Packing</a></li> <li><a href="storage.html">Storage</a></li> <li><a href="aboutus.htm">About Us</a></li></ul>
 <input type="checkbox" id="active">
 <label for="active" class="menu-btn"><i class="fas fa-bars"></i></label>
 <div class="wrapper">
 <ul class="menu">
+<li><img src="IMG_2091.jpg"></li>
 <li><a href="index.html">Home</a></li>
 <li><a href="services.html">Packing</a></li>
 <li><a href="storage.html">Storage</a></li>
 <li><a href="aboutus.html">About Us</a></li>
 </ul>
 </div>
-</nav>
-
-
-
 
 
 <style>
-
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-
-
-.menupart{
-height:10em;
-background:linear-gradient(-135deg, #c850c0,#4158d8);
-border-bottom:1em solid blue;
-}
-
-
-
-.choices{
-
-display:flex;
-flex-direction:row;
-align-items:center;
-justify-content:space-between;
-font-size:30px;
-padding-left:10rem;
-padding-right:8rem;
-padding-top:3rem;
-font-family: 'Rubik', sans-serif;
-  list-style-type: none
-}
-
-.choices a{
-color:white;
-}
-
-.choices a:hover{
-    transition:.5s;
-    color:pink;
-    }
-
-@media (max-width: 1000px) {
-.choices a{
-font-size:25px;
-}
-}
-
-
-
-
-
-
 .wrapper{
 position:fixed;
 top:0;
 left:0;
 height:100%;
 width:100%;
-background:linear-gradient(-135deg, #c850c0,#4158d8);
+background:linear-gradient(-135deg, lightblue,whitesmoke);
 clip-path:circle(25px at calc(100% - 45px) 45px);
 transition:all 0.3s ease-in-out;
-
 }
 
 #active:checked ~ .wrapper{
@@ -138,12 +81,6 @@ clip-path:circle(75%);
 
 
 }
-
-.menu{
-font-family: 'Rubik', sans-serif;
-text-decoration:none;
-}
-
 
 
 .menu-btn{
@@ -163,7 +100,6 @@ background:linear-gradient(-135deg, #c850c0,#4158d8);
 transition:all 0.3s ease;
 z-index:4;
 }
-
 
 #active:checked ~ menu-btn{
 
@@ -193,12 +129,13 @@ margin:15px 0;
 .wrapper ul li a{
 color:#fff;
 text-decoration:none;
-font-size:55px;
+font-size:75px;
 font-weight:500;
 padding:5px 50px;
 positioN:relative;
-line-height:120px;
+line-height:90px;
 transition:all 0.3s ease;
+font-family: 'Rubik', sans-serif;
 }
 
 
@@ -207,7 +144,7 @@ content:"";
 position:absolute;
 left:0;
 width:100%;
-height:100px;
+height:80px;
 background:#fff;
 border-radius:50px;
 transform:scaleY(0);
@@ -226,6 +163,43 @@ color:#c850c0;
 input{
 display:none;
 }
+
+.menu img{
+height:60px;
+width:60px;
+}
+
+
+@media screen and (min-width:1239px) {
+
+.wrapper{
+clip-path:none;
+height:10%;
+border-bottom: thick double #32a1ce;
+}
+
+
+.wrapper ul{
+top:0;
+left:10%;
+right:10%;
+transform:none;
+display:flex;
+flex-direction:row;
+justify-content:center;
+text-align:center;
+}
+
+.wrapper ul li a{
+font-size:2rem;
+}
+
+.menu-btn{
+display:none;
+}
+}
+
+
 
 </style>
 
