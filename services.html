@@ -84,7 +84,7 @@ border-radius:50%;
 color:#fff;
 font-size:20px;
 cursor:pointer;
-background:linear-gradient(-135deg, #c850c0,#4158d8);
+background:linear-gradient(-135deg, blue,whitesmoke);
 transition:all 0.3s ease;
 z-index:4;
 }
@@ -185,11 +185,17 @@ font-size:2rem;
 .menu-btn{
 display:none;
 }
+
+.menu-img{
+height:160px;
+width:160px;
 }
 
 
 
 </style>
+
+
 
 
 
@@ -216,7 +222,7 @@ display:none;
 
 <style>
     .icon-menu{
-    background-color:orange;
+    background-color:blue;
     display:flex;
     flex-direction:row;
     align-items:center;
@@ -230,7 +236,8 @@ display:none;
     padding:20px;
     padding-left:40px;
     padding-right:40px;
-    /*margin-top:100px;*/
+    background:linear-gradient(-135deg, lightblue,whitesmoke);
+    /**/
     height:40px;
     }
     
@@ -240,7 +247,7 @@ display:none;
     color:firebrick;
     }
     
-    .socialsection{
+     .socialsection{
     display:flex;
     flex-direction:row;
     justify-content:right;
@@ -254,6 +261,7 @@ display:none;
     /*border-right:1rem solid green;*/
     border-radius:10px;
     }
+    
     
     .twitsec:hover{
     transition:.5s;
@@ -283,10 +291,20 @@ display:none;
     .yelpsec i{
     color:#F00B31;
     }
+    
+    
+ @media screen and (min-width:1239px) {   
+.icon-menu{
+margin-top:90px;
+}
+}
 
-   
-    </style>    
-
+@media screen and (max-width:1239px) {
+   .icon-menu{
+   height:80px;
+   }
+   }
+    </style>   
 
 
 
