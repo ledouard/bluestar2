@@ -153,8 +153,8 @@ display:none;
 }
 
 .menu img{
-height:60px;
-width:60px;
+height:360px;
+width:360px;
 }
 
 
@@ -186,33 +186,49 @@ font-size:2rem;
 display:none;
 }
 
-.menu-img{
-height:160px;
-width:160px;
+.menu img{
+height:360px;
+width:360px;
 }
 
 
+@media screen and (min-width:1239px) {
 
-</style>
-
-
-
-
-
-
-
+.wrapper{
+clip-path:none;
+height:10%;
+border-bottom: thick double #32a1ce;
+}
 
 
+.wrapper ul{
+top:0;
+left:10%;
+right:10%;
+transform:none;
+display:flex;
+flex-direction:row;
+justify-content:center;
+text-align:center;
+}
+
+.wrapper ul li a{
+font-size:2rem;
+}
+
+.menu-btn{
+display:none;
+}
+
+.menu img{
+height:60px;
+width:60px;
+}
+
+  }
 
 
-
-
-
-
-
-
-
-<div class="icon-menu">
+  <div class="icon-menu">
 <div class="emailsection">
 <h2><i class="fa-solid fa-phone"></i>   212-260-3445</h2>
 </div>
@@ -222,7 +238,7 @@ width:160px;
 
 <style>
     .icon-menu{
-    background-color:blue;
+    background-color:orange;
     display:flex;
     flex-direction:row;
     align-items:center;
@@ -233,11 +249,10 @@ width:160px;
     width:100%;
     justify-self:end;
     font-size:30px;
-    padding:20px;
+    padding:30px;
     padding-left:40px;
     padding-right:40px;
-    background:linear-gradient(-135deg, lightblue,whitesmoke);
-    /**/
+    margin-top:100px;
     height:40px;
     }
     
@@ -247,7 +262,7 @@ width:160px;
     color:firebrick;
     }
     
-     .socialsection{
+    .socialsection{
     display:flex;
     flex-direction:row;
     justify-content:right;
@@ -261,7 +276,6 @@ width:160px;
     /*border-right:1rem solid green;*/
     border-radius:10px;
     }
-    
     
     .twitsec:hover{
     transition:.5s;
@@ -291,28 +305,9 @@ width:160px;
     .yelpsec i{
     color:#F00B31;
     }
-    
-    
- @media screen and (min-width:1239px) {   
-.icon-menu{
-margin-top:90px;
-}
-}
 
-@media screen and (max-width:1239px) {
-   .icon-menu{
-   height:80px;
-   }
-   }
-    </style>   
-
-
-
-
-
-
-
-
+   
+    </style> 
 
 
 
