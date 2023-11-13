@@ -1176,216 +1176,223 @@ li2:hover {
 
 
 
+<div class="slideshowbottom">
+<div class="container">
+  <div class="mySlides">
+    <div class="numbertext">1 / 6</div>
+    <img src="IMG_3113.jpg" style="width:100%">
+  </div>
 
+  <div class="mySlides">
+    <div class="numbertext">2 / 6</div>
+    <img src="IMG_3109.jpg" style="width:100%">
+  </div>
 
+  <div class="mySlides">
+    <div class="numbertext">3 / 6</div>
+    <img src="221231_071853_28.jpeg" style="width:100%">
+  </div>
+    
+  <div class="mySlides">
+    <div class="numbertext">4 / 6</div>
+    <img src="IMG_2222.jpg" style="width:100%">
+  </div>
 
+  <div class="mySlides">
+    <div class="numbertext">5 / 6</div>
+    <img src="IMG_2127.jpg" style="width:100%">
+  </div>
+    
+  <div class="mySlides">
+    <div class="numbertext">6 / 6</div>
+    <img src="imagejpeg_3.jpg" style="width:100%">
+  </div>
+    
+  <a class="prev" onclick="plusSlides(-1)">❮</a>
+  <a class="next" onclick="plusSlides(1)">❯</a>
 
+  <div class="caption-container">
+    <p id="caption"></p>
+  </div>
 
-
-
-
-
-
-
-
-
-
-
-
-<h1 style="text-align:center; 
-    font-size:40px;
-    font-weight:lighter;
-    font-family: 'Roboto Condensed', sans-serif;"
-    Our Sights and Sounds</h1>
-<div class="slideshow" style="background: linear-gradient(tan, lightblue);">
-
-<div class="slider">
-<div class="slides">
-<!--radio buttons-->
-
-<input type="radio" name="radio-btn" id="radio1">
-<input type="radio" name="radio-btn" id="radio2">
-<input type="radio" name="radio-btn" id="radio3">
-<input type="radio" name="radio-btn" id="radio4">
-<input type="radio" name="radio-btn" id="radio5">
-<input type="radio" name="radio-btn" id="radio6">
-<input type="radio" name="radio-btn" id="radio7">
-<input type="radio" name="radio-btn" id="radio8">
-<!--radio buttons-->
-
-<!--slide images-->
-
-<div class="slide first">
-<img src="707930136.jpg" style="width:750px;height:750px;" alt="">
+  <div class="row">
+    <div class="column">
+      <img class="demo cursor" src="IMG_3113.jpg " style="width:100%" onclick="currentSlide(1)" alt="Winter square">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="IMG_3109.jpg" style="width:100%" onclick="currentSlide(2)" alt="Magical lights">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="221231_071853_28.jpeg" style="width:100%" onclick="currentSlide(3)" alt="Little snowman">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="IMG_2222.jpg" style="width:100%" onclick="currentSlide(4)" alt="Cozy evening">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="IMG_2127.jpg" style="width:100%" onclick="currentSlide(5)" alt="Silence in the park">
+    </div>    
+    <div class="column">
+      <img class="demo cursor" src="imagejpeg_3.jpg" style="width:100%" onclick="currentSlide(6)" alt="Christmas gifts">
+    </div>
+  </div>
 </div>
-
-<div class="slide">
-<img src="707930142.jpg" alt="">
-</div>
-
-<div class="slide">
-<img src="IMG_2154.jpg"alt="">
-</div>
-
-<div class="slide">
-<img src="708094561.jpg" alt="">
-</div>
-
-<div class="slide">
-<img src="IMG_2137.jpg" alt="">
-</div>
-
-<div class="slide">
-<img src="IMG_1837.jpg" alt="">
-</div>
-
-<div class="slide">
-<img src="IMG_2140.jpg" alt="">
-</div>
-
-<div class="slide">
-<img src="IMG_2229.jpg" alt="">
-</div>
-
-<!--slide images end-->
-
-
-
-<!--auto time nav-->
-<div class="navigation-auto">
-<div class="auto-btn1"></div>
-<div class="auto-btn2"></div>
-<div class="auto-btn3"></div>
-<div class="auto-btn4"></div>
-<div class="auto-btn5"></div>
-<div class="auto-btn6"></div>
-<div class="auto-btn7"></div>
-<div class="auto-btn8"></div>
-</div>
-
-
-<!--auto time nav end-->
-
-<!--manual time nav-->
-
-<div class="navigation-manual">
-<label for="radio1" class="manual-btn"></label>
-<label for="radio2" class="manual-btn"></label>
-<label for="radio3" class="manual-btn"></label>
-<label for="radio4" class="manual-btn"></label>
-<label for="radio5" class="manual-btn"></label>
-<label for="radio6" class="manual-btn"></label>
-<label for="radio7" class="manual-btn"></label>
-<label for="radio8" class="manual-btn"></label>
-</div>
-
-
-<!--manual time nav end-->
-</div>
-</div>
-<!--imag slider end-->
-</div>
-
-
 
 <style>
 
-.slideshow{
-margin:0;
-padding:0;
-height:100vh;
-display:flex;
-justify-content:center;
-align-items:center;
+.slideshowbottom {
+  font-family: Verdana;
+  background:#000;
 }
 
-.slider{
-width:800px;
-height:500px;
-border-radius:10px;
-overflow:hidden;
+
+
+
+img {
+  vertical-align: middle;
+ 
 }
 
-.slides{
-width:1000%;
-height:500px;
-display:flex;
+/* Position the image container (needed to position the left and right arrows) */
+.container {
+position: relative;
+ 
 }
 
-.slides input{
-display:none;
+/* Hide the images by default */
+.mySlides {
+  display: none;
 }
 
-.slide{
-width:10%;
-transition:2s;
+/* Add a pointer when hovering over the thumbnail images */
+.cursor {
+  cursor: pointer;
 }
 
-.slide img{
-width:800px;
-height:500px;
+/* Next & previous buttons */
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 40%;
+  width: auto;
+  padding: 16px;
+  margin-top: -50px;
+  color: white;
+  font-weight: bold;
+  font-size: 22px;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  -webkit-user-select: none;
 }
 
-/*manual nav slideshow*/
-
-.navigation-manual{
-position:absolute;
-width:800px;
-margin-top:-40px;
-display:flex;
-justify-content:center;
-
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
 }
 
-.manual-btn{
-border:2px solid #40d3dc;
-padding:15px;
-border-radius:60px;
-cursor:pointer;
-transition:1s;
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
 }
 
-.manual-btn:not(:last-child){
-margin-right:40px;
+/* Number text (1/3 etc) */
+.numbertext {
+  color: white;
+  font-size: 12px;
+  font-weight: bold;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
 }
 
-.manual-btn:hover{
-background:darkblue;
+/* Container for image text */
+.caption-container {
+  text-align: center;
+  background-color: #222;
+  padding: 2px 16px;
+  color: white;
 }
 
-#radio1:checked~.first{
-margin-left:0;
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
 }
 
-#radio2:checked~.first{
-margin-left:-10%;
+/* Six columns side by side */
+.column {
+  float: left;
+  width: 16.66%;
 }
 
-#radio3:checked~.first{
-margin-left:-20%;
+/* Add a transparency effect for thumnbail images */
+.demo {
+  opacity: 0.6;
 }
 
-#radio4:checked~.first{
-margin-left:-30%;
+.active,
+.demo:hover {
+  opacity: 1;
 }
 
-#radio5:checked~.first{
-margin-left:-40%;
-}
-    
-#radio6:checked~.first{
-margin-left:-50%;
-}   
-
-#radio7:checked~.first{
-margin-left:-60%;
-}
-
-#radio8:checked~.first{
-margin-left:-70%;
-}  
-    
 </style>
+
+<script>
+
+
+let slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  let i;
+  let slides = document.getElementsByClassName("mySlides");
+  let dots = document.getElementsByClassName("demo");
+  let captionText = document.getElementById("caption");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+  captionText.innerHTML = dots[slideIndex-1].alt;
+}
+
+</script>
+
+
+
+https://codepen.io/tag/slideshow?cursor=ZD0xJm89MCZwPTE2
+https://codepen.io/tofjadesign/pen/QWBWwPW
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
