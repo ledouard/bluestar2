@@ -1277,7 +1277,7 @@ position: relative;
 }
 
 /* Next & previous buttons */
-.prev,
+
 .next {
   cursor: pointer;
   position: absolute;
@@ -1287,7 +1287,7 @@ position: relative;
   margin-top: -50px;
   color: white;
   font-weight: bold;
-  font-size: 22px;
+  font-size: 32px;
   border-radius: 0 3px 3px 0;
   user-select: none;
   -webkit-user-select: none;
@@ -1344,6 +1344,14 @@ position: relative;
 .demo:hover {
   opacity: 1;
 }
+
+@media screen and (max-width:1239px) {
+.column{
+display:none;
+}
+}
+
+
 </style>
 
 <script>
