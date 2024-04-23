@@ -1,0 +1,732 @@
+<html>
+<head>
+<script src="https://kit.fontawesome.com/58f81d92db.js" crossorigin="anonymous"></script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Anton&family=Roboto+Condensed:wght@700&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Jost&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Jost&display=swap" rel="stylesheet">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Nunito&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Tilt+Warp&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="stylewebsite.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@1,800&display=swap" rel="stylesheet">
+
+
+      <meta charset="UTF-8">
+      <meta name="description" content="NYC / NJ / Florida Area Specialty Movers.  We are a professional Moving and Storage company with almost a decade of experience.  BBB Accredited, Highly Reviewed.">
+      <meta name="keywords" content="moving, storage, packing, relocation services">
+      <meta name="author" content="Leonard">
+
+
+
+
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@1,800&display=swap" rel="stylesheet">
+<script src="https://kit.fontawesome.com/58f81d92db.js" crossorigin="anonymous"></script>
+  <title>Welcome to Bluestar Movers LLC</title>
+  <link rel="icon" type="image/jpg" href="IMG_2091.jpg"/>
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-XRC0LSB9XC">
+</script>
+<script>
+��window.dataLayer = window.dataLayer || [];
+��function gtag(){dataLayer.push(arguments);}
+��gtag('js', new Date());
+
+��gtag('config', 'G-XRC0LSB9XC');
+</script>
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.0.2/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.min.js"></script>
+
+
+</head>
+<body>
+
+<nav>
+<input type="checkbox" id="active">
+<label for="active" class="menu-btn"><i class="fas fa-bars"></i></label>
+<div class="wrapper">
+<ul class="menu">
+<li><img src="IMG_2091.jpg"></li>
+<li><a href="index.html">Home</a></li>
+<li><a href="services.html">Packing</a></li>
+<li><a href="storage.html">Storage</a></li>
+<li><a href="aboutus.html">About Us</a></li>
+</ul>
+</div>
+
+
+<style>
+.wrapper{
+position:fixed;
+top:0;
+left:0;
+height:100%;
+width:100%;
+background:linear-gradient(-135deg, lightblue,whitesmoke);
+clip-path:circle(25px at calc(100% - 45px) 45px);
+transition:all 0.3s ease-in-out;
+  z-index:1000;
+}
+
+#active:checked ~ .wrapper{
+clip-path:circle(75%);
+
+
+}
+
+
+.menu-btn{
+position:fixed;
+right:20px;
+top:20px;
+z-index:2;
+text-align:center;
+line-height:50px;
+height:50px;
+width:50px;
+border-radius:50%;
+color:#fff;
+font-size:20px;
+cursor:pointer;
+background:linear-gradient(-135deg, blue,whitesmoke);
+transition:all 0.3s ease;
+z-index:1001;
+}
+
+#active:checked ~ menu-btn{
+
+
+background:#fff;
+color:#4158d8;
+}
+
+#active:checked ~ .menu-btn i:before{
+content:"\f00d";
+
+
+}
+.wrapper ul{
+position:absolute;
+top:50%;
+left:50%;
+transform:translate(-50%, -50%);
+list-style:none;
+text-align:center;
+}
+
+.wrapper ul li{
+margin:15px 0;
+}
+
+.wrapper ul li a{
+color:#fff;
+text-decoration:none;
+font-size:75px;
+font-weight:500;
+padding:5px 50px;
+positioN:relative;
+line-height:90px;
+transition:all 0.3s ease;
+font-family: 'Rubik', sans-serif;
+}
+
+
+.wrapper ul li a:after{
+content:"";
+position:absolute;
+left:0;
+width:100%;
+height:80px;
+background:#fff;
+border-radius:50px;
+transform:scaleY(0);
+z-index:-1;
+transition:all 0.3s ease;
+}
+
+.wrapper ul li a:hover:after{
+transform:scaleY(1);
+}
+
+.wrapper ul li a:hover{
+color:#c850c0;
+}
+
+input{
+display:none;
+}
+
+.menu img{
+height:360px;
+width:360px;
+}
+
+
+@media screen and (min-width:1239px) {
+
+.wrapper{
+clip-path:none;
+height:10%;
+border-bottom: thick double #32a1ce;
+}
+
+
+.wrapper ul{
+top:0;
+left:10%;
+right:10%;
+transform:none;
+display:flex;
+flex-direction:row;
+justify-content:center;
+text-align:center;
+}
+
+.wrapper ul li a{
+font-size:2rem;
+}
+
+.menu-btn{
+display:none;
+}
+
+.menu img{
+height:60px;
+width:60px;
+}
+  }
+
+</style>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="icon-menu">
+<div class="emailsection">
+<h2><a href="tel:212-260-3445"><i class="fa-solid fa-phone"></i>   212-260-3445</a></h2>
+</div>
+<div class="socialsection">    <div class="twitsec"><a href="https://twitter.com/_Bluestarmovers"><i class="fa-brands fa-twitter"></i></a></div>    <div class="yelpsec"> <a href="https://yelp.com/biz/blue-star-movers-brooklyn-2"><i class="fa-brands fa-yelp"></i></a></div>
+</div>
+</div>
+
+<style>
+    .icon-menu{
+    background-color:blue;
+    display:flex;
+    flex-direction:row;
+    align-items:center;
+    justify-content:space-evenly;
+    /*grid-template-columns: repeat(3,auto);*/
+    list-style:none;
+    text-align:center;
+    width:100%;
+    justify-self:end;
+    font-size:30px;
+    padding:30px;
+    padding-left:40px;
+    padding-right:40px;
+    background:linear-gradient(-135deg, lightblue,whitesmoke);
+    /**/
+    height:40px;
+    
+    }
+    
+    .emailsection h2{
+    font-size:2rem;
+    font-family: 'Roboto Condensed', sans-serif;
+    color:firebrick;
+    }
+    
+     .socialsection{
+    display:flex;
+    flex-direction:row;
+    justify-content:right;
+    width:10%;
+    }
+    
+    .twitsec{
+    height:40px;
+    width:50%;
+    background-color:#0B7AF0; 
+    /*border-right:1rem solid green;*/
+    border-radius:10px;
+    }
+    
+    
+    .twitsec:hover{
+    transition:.5s;
+    background-color:blue;
+    }
+    
+    .twitsec i{
+    color:lightblue;
+    }
+    
+    .yelpsec{
+   
+    width:50%;
+    background-color:lightpink;
+    right:0;
+  
+  border-radius:10px;
+    
+    }
+    
+      .yelpsec:hover{
+    transition:.5s;
+    background-color:lightcoral;
+    
+    }
+    
+    .yelpsec i{
+    color:#F00B31;
+    }
+    
+    
+ @media screen and (min-width:1239px) {   
+.icon-menu{
+margin-top:93px;
+}
+}
+
+@media screen and (max-width:1239px) {
+   .icon-menu{
+   height:100px;
+   }
+  
+     .emailsection h2{
+   font-size:3rem;
+   }
+   }
+    </style>       
+    
+    
+    
+    
+    
+    
+    
+    
+    
+<div class="">
+  <div class="main-header pt-lg-3 pt-2 position-absolute container-fluid">
+    <nav class="d-flex justify-content-between align-items-center px-md-4 px-2">
+      <div class="main-logo">
+        <span class="d-block bg-danger p-1 px-3 text-white shadow">K | Mendano</span>
+      </div>
+      <div class="d-none d-sm-block">
+          <ul class="nav justify-content-end mt-0">
+        <li class="nav-item">
+          <a class="nav-link active link-light" aria-current="page" href="#">Active</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link link-light" href="#">Link</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link link-light" href="#">Link</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link link-light" href="#">Link</a>
+        </li>
+      </ul>
+      </div>
+      <div class="mobile-menu d-block d-sm-none">
+        <a class="nav-link link-light" href="#"><i class="fa-solid fa-bars"></i></a>
+      </div>
+    </nav>
+  </div>
+  <div id="mainBanner" class="carousel slide" data-bs-ride="carousel" data-bs-pause="false">
+    <div class="carousel-inner">
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#mainBanner" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#mainBanner" data-bs-slide-to="1" aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#mainBanner" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        <button type="button" data-bs-target="#mainBanner" data-bs-slide-to="3" aria-label="Slide 4"></button>
+        <button type="button" data-bs-target="#mainBanner" data-bs-slide-to="4" aria-label="Slide 5"></button>
+      </div>
+      <div class="carousel-item active" data-bs-interval="7000">
+        <img src="IMG_3113.jpg" class="d-block w-100" alt="...">
+        <div class="carousel-caption px-md-5">
+          <h5>No Job Too Big Or Small</h5>
+          <hr class="bg-light border-4 border-top border-light">
+          <p id="slidesmalls">Blue Star Moves Them All</p>
+          <div class="banner-btn">
+            <button type="button" class="btn btn-secondary px-lg-5 px-md-4 px-2 py-2 rounded-0 border">Lorem Ipsum</button>
+            <button type="button" class="btn btn-success px-lg-5 px-md-4 px-2 py-2 rounded-0 border">Dolor Iseter</button>
+          </div>
+        </div>
+      </div>
+      <div class="carousel-item" data-bs-interval="7000">
+        <img src="IMG_3109.jpg" class="d-block w-100" alt="...">
+        <div class="carousel-caption px-md-5">
+          <h5>Your Relocation Partners</h5>
+          <hr class="bg-light border-4 border-top border-light">
+          <p>Taking Steps Together Toward a New Beginning</p>
+          <div class="banner-btn">
+            <button type="button" class="btn btn-secondary px-lg-5 px-md-4 px-2 py-2 rounded-0 border">Lorem Ipsum</button>
+            <button type="button" class="btn btn-success px-lg-5 px-md-4 px-2 py-2 rounded-0 border">Dolor Iseter</button>
+          </div>
+        </div>
+      </div>
+      <div class="carousel-item" data-bs-interval="7000">
+        <img src="221231_071853_28.jpeg" class="d-block w-100" alt="...">
+        <div class="carousel-caption px-md-5">
+          <h5>Bridging Gaps Between Old and New</h5>
+          <hr class="bg-light border-4 border-top border-light">
+          <p>Transitions to Experiences for You</p>
+          <div class="banner-btn">
+            <button type="button" class="btn btn-secondary px-lg-5 px-md-4 px-2 py-2 rounded-0 border">Lorem Ipsum</button>
+            <button type="button" class="btn btn-success px-lg-5 px-md-4 px-2 py-2 rounded-0 border">Dolor Iseter</button>
+          </div>
+        </div>
+      </div>
+      <div class="carousel-item" data-bs-interval="7000">
+        <img src="221231_071854_36.jpeg" class="d-block w-100" alt="...">
+        <div class="carousel-caption px-md-5">
+          <h5>From Packing to Moving In</h5>
+          <hr class="bg-light border-4 border-top border-light">
+          <p>It's a Breeze with Blue Star Movers.</p>
+          <div class="banner-btn">
+            <button type="button" class="btn btn-secondary px-lg-5 px-md-4 px-2 py-2 rounded-0 border">Lorem Ipsum</button>
+            <button type="button" class="btn btn-success px-lg-5 px-md-4 px-2 py-2 rounded-0 border">Dolor Iseter</button>
+          </div>
+        </div>
+      </div>
+      <div class="carousel-item" data-bs-interval="7000">
+        <img src="IMG_1545.jpg" class="d-block w-100" alt="...">
+        <div class="carousel-caption px-md-5">
+          <h5>5th slide label</h5>
+          <hr class="bg-light border-4 border-top border-light">
+          <p>Some representative placeholder content for the first slide.</p>
+          <div class="banner-btn">
+            <button type="button" class="btn btn-secondary px-lg-5 px-md-4 px-2 py-2 rounded-0 border">Lorem Ipsum</button>
+            <button type="button" class="btn btn-success px-lg-5 px-md-4 px-2 py-2 rounded-0 border">Dolor Iseter</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+</body>
+<style>
+
+.main-logo > span {
+    font-size: 1.35em;
+}
+ .main-header {
+     z-index: 999;
+}
+hr.border-light {
+    max-width: 300px;
+    opacity: 0.9;
+}
+ .carousel-item {
+     transition: transform 1s ease-in-out;
+}
+ .carousel-caption {
+     top: 48%;
+     transform: translate(0, -50%);
+     bottom: auto;
+     left: 0;
+     right: 0;
+      width: 0;
+      opacity: 0;
+      overflow: hidden;
+      text-align: left;
+}
+ .carousel-item.active .carousel-caption  {
+     animation: widthSlide 3.5s 1;
+     opacity: 1;
+      z-index: 999;
+      width: 100% ;
+}
+ @keyframes widthSlide {
+     0% {
+         width: 0% ;
+         opacity: 0;
+    }
+   50% {
+        width: 100% ;
+         opacity: 1;
+    }
+     100% {
+         width: 100% ;
+         opacity: 1;
+    }
+}
+.carousel-caption h5 {
+    font-size: 5em;
+    text-transform: uppercase;
+    font-weight: 900;
+    -webkit-text-stroke: 2px #E2FADB;
+    color: blue;
+      font-family: 'Rubik', sans-serif;
+    position: relative;
+    width: fit-content;
+    padding-right: 10px;
+}
+.carousel-caption h5:after {
+    content: '';
+    position: absolute;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background: #fff;
+    bottom: -20px;
+    opacity: 1;
+}
+ .carousel-item.active .carousel-caption h5:after {
+    width: 10%;
+    height: 4px;
+    animation: titleCover 2.5s 1;
+    opacity: 0;
+}
+
+ @keyframes titleCover {
+     0% {
+        left: 0;
+        right: 0;
+        width: 100%;
+        height: 100%;
+       opacity: 1;
+    }
+   20% {
+        left: 0;
+        right: 0;
+        width: 100%;
+        height: 100%;
+       opacity: 1;
+    }
+   30% {
+        left: 0;
+        right: 0;
+        width: 100%;
+        height: 100%;
+        opacity: 1;
+    }
+    55% {
+        left: 0;
+        right: 0;
+        width: 100%;
+        height: 5px;
+        opacity: 1;
+    }
+   95% {
+        left: 0;
+        right: 0;
+        width: 10%;
+    }
+     100% {
+        left: 0;
+        right: 0;
+        width: 10%;
+        opacity: 0.5;
+    }
+}
+.carousel-item > img {
+    height: 100vh;
+    object-fit: cover;
+    transform: scale(1);
+}
+.carousel-item.active > img {
+    transform: scale(4);
+    animation: bgScale 200s 1;
+}
+@keyframes bgScale {
+  0% {
+      transform: scale(1);
+    }
+  100% {
+      transform: scale(4);
+    }
+}
+ .carousel-item:before {
+     content: '';
+     position: absolute;
+     top: 0;
+     left: 0;
+     right: 0;
+     bottom: 0;
+     background: rgb(0 0 0 / 40%);
+     z-index: 99;
+}
+
+ .carousel-caption p {
+     font-size: 1.35em;
+     font-weight: 600;
+     text-transform: uppercase;
+     font-family: 'Rubik', sans-serif;
+}
+ .carousel-caption * {
+     white-space: nowrap;
+}
+.carousel-indicators {
+    right: 10px;
+    left: auto;
+    margin: 0;
+    width: 25px;
+    flex-wrap: wrap;
+    bottom: auto;
+    top: 45%;
+    transform: translate(0, -50%);
+    gap: 10px;
+    z-index: 9999;
+}
+.carousel-indicators [data-bs-target] {
+    width: 25px;
+    height: 25px;
+    border-radius: 100px;
+    border: none;
+}
+li.nav-item > a:after {
+    content: '';
+    position: absolute;
+    height: 3px;
+    background: white;
+    left: 0;
+    bottom: -10px;
+    right: 0;
+    margin: 0 auto;
+    opacity: 0;
+    width: 85%;
+  transition: 0.3s all ease-in-out;
+}
+li.nav-item > a.active:after,
+li.nav-item > a:hover:after {
+    bottom: 0;
+    opacity: 0.8;
+}
+li.nav-item > a {
+    position: relative;
+}
+
+
+@media screen and (max-width: 991px) {
+  .carousel-caption h5 {
+    font-size: 3.5em;
+    
+}
+  .carousel-caption p {
+    font-size: 1em;
+    font-weight: 900;
+    text-transform: uppercase;
+}
+}
+
+@media screen and (max-width: 768px) {
+  .carousel-caption h5 {
+    font-size: 3.5em;
+}
+  .carousel-caption p {
+    font-size: 1em;
+    font-weight: 600;
+}
+  .carousel-item img {
+    height: 80vh;
+}
+  .mian-logo > span {
+    font-size: 1em;
+}
+.carousel-indicators {
+    right: 0;
+    bottom: 0;
+    left: 0;
+    padding: 0;
+    margin-right: 15%;
+    margin-bottom: 1rem;
+    margin-left: 15%;
+    flex-wrap: nowrap;
+    top: auto;
+    transform: unset;
+    width: auto;
+    gap: 5px;
+}
+  .carousel-indicators [data-bs-target] {
+    width: 22px;
+    height: 22px;
+}
+}
+
+@media screen and (max-width: 575px) {
+  .carousel-caption h5 {
+    font-size: 2em;
+}
+  .carousel-item img {
+    height: 60vh;
+}
+  .carousel-caption p {
+    font-size: 0.75em;
+}
+  .carousel-caption {
+     width: 100%;
+    opacity: 0;
+}
+ .carousel-item.active .carousel-caption {
+     animation: sample 2.5s 1;
+    opacity: 1;
+}
+  .carousel-caption * {
+    white-space: unset;
+}
+ @keyframes sample {
+     0% {
+         opacity: 0;
+    }
+   50% {
+         opacity: 1;
+    }
+     100% {
+         opacity: 1;
+    }
+}
+  .carousel-caption h5 {
+    -webkit-text-stroke: 1px #E2FADB;
+}
+  hr.border-light {
+    max-width: 200px;
+}
+}
+
+@media screen and (max-width: 480px) {
+.carousel-caption h5 {
+    font-size: 1.45em;
+}
+  .carousel-caption p {
+    font-size: 0.7em;
+}
+  .carousel-item img {
+    height: 50vh;
+}
+}
+</style>    
